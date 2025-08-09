@@ -234,7 +234,7 @@ body {
 
 /* Three Fourth Network Start */
 .three-fourth-network{
-    padding: 5rem 5% 2rem 5%;
+    padding: 5rem 5% 1.5rem 5%;
 }
 .three-fourth-network .three-fourth-network-top{
   display: flex;
@@ -280,7 +280,7 @@ body {
 /* Media Queries */
 @media screen and (min-width: 1230px) and (max-width: 1399px){
   .three-fourth-network {
-    padding: 4.5rem 5% 2rem 5%;
+    padding: 4.5rem 5% 1rem 5%;
   }
   .three-fourth-network .three-fourth-network-content h1 {
     font-size: calc(5.5rem + 0.5vw);
@@ -296,7 +296,7 @@ body {
 
 @media screen and (min-width: 992px) and (max-width: 1229px){
   .three-fourth-network {
-    padding: 4rem 5% 1.5rem 5%;
+    padding: 4rem 5% 0.55rem 5%;
   }
   .three-fourth-network .three-fourth-network-content h1 {
     font-size: calc(5rem + 0.5vw);
