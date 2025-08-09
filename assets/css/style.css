@@ -12,7 +12,7 @@ body {
 }
 
 ::selection{
-  background-color: #fdb913;
+  background-color: #fcb913;
   color: #fff;
 }
 
@@ -23,16 +23,21 @@ body {
 .stack-section{
     position: relative;
     width: 100%;
+    overflow: hidden;
 }
 #home-stack-section-1{
     height: 100vh;
-    overflow: hidden;
 }
 #home-stack-section-2{
     border-top-left-radius: 60px;
     border-top-right-radius: 60px;
     background-color: #222;
-    overflow: hidden;
+    box-shadow: 0px -7px 10px 0px #fcba1340;
+}
+#home-stack-section-3{
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+    background-color: #111;
     box-shadow: 0px -7px 10px 0px #fcba1340;
 }
 /* Stacking Sections End */
@@ -52,7 +57,7 @@ body {
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    background: #fdb913;
+    background: #fcb913;
     transition: transform 0.2s ease;
     transform-origin: center center;
 }
@@ -239,7 +244,7 @@ body {
 
 /* Three Fourth Network Start */
 .three-fourth-network{
-    padding: 5rem 5% 1.5rem 5%;
+    padding: 5rem 5% 2rem 5%;
 }
 .three-fourth-network .three-fourth-network-top{
   display: flex;
@@ -285,7 +290,7 @@ body {
 /* Media Queries */
 @media screen and (min-width: 1230px) and (max-width: 1399px){
   .three-fourth-network {
-    padding: 4.5rem 5% 1rem 5%;
+    padding: 4.5rem 5% 1.5rem 5%;
   }
   .three-fourth-network .three-fourth-network-content h1 {
     font-size: calc(5.5rem + 0.5vw);
@@ -301,7 +306,7 @@ body {
 
 @media screen and (min-width: 992px) and (max-width: 1229px){
   .three-fourth-network {
-    padding: 4rem 5% 0.55rem 5%;
+    padding: 4rem 5% 1rem 5%;
   }
   .three-fourth-network .three-fourth-network-content h1 {
     font-size: calc(5rem + 0.5vw);
@@ -318,3 +323,34 @@ body {
   }
 }
 /* Three Fourth Network End */
+
+/* Trusted By Start */
+.trusted-by{
+  padding: 4rem 5% 3rem 5%;
+}
+.trusted-by h2{
+  color: #fff;
+  font-size: calc(6rem + 0.5vw);
+  font-weight: 700;
+}
+.trusted-by h2 span{
+  color: #fcb913;
+}
+.trusted-by-card-row{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 3rem;
+}
+.trusted-by-card-row .trust-card{
+  width: 23%;
+  margin-bottom: 2.3rem;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: rgba(187, 187, 187, 0.266) 0px 2px 8px 0px;
+}
+.trusted-by-card-row .trust-card img{
+  width: 100%;
+  border-radius: 20px;
+}
+/* Trusted By End */

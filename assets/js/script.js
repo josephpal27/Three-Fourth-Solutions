@@ -113,3 +113,13 @@ function raf(time) {
 requestAnimationFrame(raf);
 
 // ---------------------------------------------------------------------------------------------------------------
+
+// Functionality For Home Page Trusted By Cards Hover Effect
+VanillaTilt.init(document.querySelectorAll(".trusted-by-card-row .trust-card"), {
+    max: 15,
+    speed: 400,
+    glare: true,
+    "max-glare": 0.2
+});
+
+// ---------------------------------------------------------------------------------------------------------------

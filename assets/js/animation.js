@@ -1,4 +1,6 @@
 // Home Page Animations 
+
+// Three Fourth Network
 document.addEventListener("DOMContentLoaded", () => {
   let section = document.querySelector("#home-stack-section-2");
   let heading = section.querySelector("h1");
@@ -40,6 +42,30 @@ document.addEventListener("DOMContentLoaded", () => {
       },
     }
   );
+});
+
+// Trusted By Cards
+document.addEventListener("DOMContentLoaded", () => {
+  let images = document.querySelectorAll(".trust-card img");
+
+  images.forEach((img) => {
+    // Initial hidden state
+    gsap.set(img, { clipPath: "inset(0 100% 0 0)" });
+
+    // Animate each image individually when it enters viewport
+    gsap.to(img, {
+      clipPath: "inset(0 0% 0 0)", // reveal
+      duration: 1.8, // slower, smoother
+      ease: "power3.out",
+      scrollTrigger: {
+        trigger: img,
+        start: "top 95%",
+        end: "top 60%",
+        toggleActions: "play none none reverse",
+        markers: false
+      }
+    });
+  });
 });
 
 // ----------------------------------------------------------------------------------------------------------
