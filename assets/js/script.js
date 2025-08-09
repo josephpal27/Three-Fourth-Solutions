@@ -93,3 +93,23 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 // ---------------------------------------------------------------------------------------------------------------
+
+// Lenis Smooth Scroll Setup
+const lenis = new Lenis({
+  duration: 1.2,  // smoothness speed
+  easing: (t) => 1 - Math.pow(1 - t, 4), // ease out quart
+  smooth: true,
+  smoothTouch: false,
+});
+
+// Update GSAP ScrollTrigger on Lenis scroll
+lenis.on('scroll', ScrollTrigger.update);
+
+// Lenis RAF loop
+function raf(time) {
+  lenis.raf(time);
+  requestAnimationFrame(raf);
+}
+requestAnimationFrame(raf);
+
+// ---------------------------------------------------------------------------------------------------------------
