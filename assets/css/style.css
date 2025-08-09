@@ -11,6 +11,11 @@ body {
   font-family: "Anek Bangla", sans-serif;
 }
 
+::selection{
+  background-color: #fdb913;
+  color: #fff;
+}
+
 /* Stacking Sections Start */
 .stacking-sections-container{
     overflow: hidden;
