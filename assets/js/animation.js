@@ -44,9 +44,32 @@ document.addEventListener("DOMContentLoaded", () => {
   );
 });
 
-// Trusted By Cards
+// Trusted By
 document.addEventListener("DOMContentLoaded", () => {
-  let images = document.querySelectorAll(".trust-card img");
+  let section = document.querySelector("#home-stack-section-3");
+  let heading = section.querySelector("h2");
+
+   gsap.fromTo(
+    heading,
+    { opacity: 0, y: 60 },
+    {
+      opacity: 1,
+      y: 0,
+      ease: "power3.out",
+      scrollTrigger: {
+        trigger: section,
+        start: "top 80%",
+        end: "top 30%",
+        scrub: 2,  // ties animation to scroll (works up & down)
+        scroller: document.body, // needed if using Lenis
+        markers: false,
+      },
+    }
+  );
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  let images = document.querySelectorAll(".trusted-by-card-row .trust-card img");
 
   images.forEach((img) => {
     // Initial hidden state
