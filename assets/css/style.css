@@ -94,7 +94,7 @@ body {
 #preloader {
   position: fixed;
   inset: 0;
-  background: #222;
+  background: #000;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -106,40 +106,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-.loader-content video{
-  width: 350px;
-}
-.pulse {
-  position: absolute;
-  width: 120px;
-  height: 120px;
-  border: 3px solid rgba(255,255,255,0.5);
-  border-radius: 50%;
-  animation: pulseAnim 1.6s ease-out infinite;
-}
-.pulse2 {
-  animation-delay: 0.8s;
-}
-/* Pulse animation */
-@keyframes pulseAnim {
-  0% {
-    transform: scale(0.6);
-    opacity: 1;
-  }
-  100% {
-    transform: scale(1.5);
-    opacity: 0;
-  }
-}
-/* Logo breathing effect */
-@keyframes scaleIn {
-  0% {
-    transform: scale(1);
-  }
-  100% {
-    transform: scale(1.1);
-  }
 }
 #preloader.hide {
   opacity: 0;
