@@ -93,6 +93,32 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
+// Trusted By 400+ Clients Heading
+document.addEventListener("DOMContentLoaded", () => {
+  let section = document.querySelector("#home-stack-section-3");
+  let heading2 = section.querySelector("h3");
+
+  if (heading2) {
+    gsap.fromTo(
+      heading2,
+      { opacity: 0, y: -60 }, // start above
+      {
+        opacity: 1,
+        y: 0, // settle into place
+        ease: "power2.out",
+        scrollTrigger: {
+          trigger: heading2,
+          start: "top 70%",
+          end: "top 40%",
+          scrub: 7,
+          scroller: document.body,
+          markers: false,
+        },
+      }
+    );
+  }
+});
+
 // Trusted By 400+ ClientsSlider
 document.addEventListener("DOMContentLoaded", () => {
   const slider = document.querySelector("#home-stack-section-3 .clients-slider");
@@ -118,33 +144,6 @@ document.addEventListener("DOMContentLoaded", () => {
       x: gsap.utils.unitize(x => parseFloat(x) % -totalWidth) // loop seamlessly
     }
   });
-});
-
-
-// Trusted By 400+ Clients Heading
-document.addEventListener("DOMContentLoaded", () => {
-  let section = document.querySelector("#home-stack-section-3");
-  let heading2 = section.querySelector("h3");
-
-  if (heading2) {
-    gsap.fromTo(
-      heading2,
-      { opacity: 0, y: -60 }, // start above
-      {
-        opacity: 1,
-        y: 0, // settle into place
-        ease: "power2.out",
-        scrollTrigger: {
-          trigger: heading2,
-          start: "top 70%",
-          end: "top 40%",
-          scrub: 7,
-          scroller: document.body,
-          markers: false,
-        },
-      }
-    );
-  }
 });
 
 // ----------------------------------------------------------------------------------------------------------
