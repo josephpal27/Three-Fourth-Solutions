@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", () => {
   );
 });
 
-// Trusted By
+// Trusted By Heading
 document.addEventListener("DOMContentLoaded", () => {
   let section = document.querySelector("#home-stack-section-3");
   let heading = section.querySelector("h2");
@@ -68,6 +68,7 @@ document.addEventListener("DOMContentLoaded", () => {
   );
 });
 
+// Trusted By Cards
 document.addEventListener("DOMContentLoaded", () => {
   let images = document.querySelectorAll(".trusted-by-card-row .trust-card img");
 
@@ -78,7 +79,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Animate each image individually when it enters viewport
     gsap.to(img, {
       clipPath: "inset(0 0% 0 0)", // reveal
-      duration: 1.8, // slower, smoother
+      duration: 2.5, // slower, smoother
       ease: "power3.out",
       scrollTrigger: {
         trigger: img,
@@ -89,6 +90,61 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   });
+});
+
+
+// Trusted By 400+ ClientsSlider
+document.addEventListener("DOMContentLoaded", () => {
+  const slider = document.querySelector("#home-stack-section-3 .clients-slider");
+  const images = Array.from(slider.querySelectorAll("img"));
+
+  // Duplicate the images once to make the loop seamless
+  images.forEach(img => {
+    slider.appendChild(img.cloneNode(true));
+  });
+
+  const allImages = slider.querySelectorAll("img");
+
+  // Total width of all original images
+  const totalWidth = images.reduce((sum, img) => sum + img.offsetWidth, 0);
+
+  // Animate using pixel values (no gaps)
+  gsap.to(allImages, {
+    x: -totalWidth,
+    duration: 25, // adjust speed
+    ease: "none",
+    repeat: -1,
+    modifiers: {
+      x: gsap.utils.unitize(x => parseFloat(x) % -totalWidth) // loop seamlessly
+    }
+  });
+});
+
+
+// Trusted By 400+ Clients Heading
+document.addEventListener("DOMContentLoaded", () => {
+  let section = document.querySelector("#home-stack-section-3");
+  let heading2 = section.querySelector("h3");
+
+  if (heading2) {
+    gsap.fromTo(
+      heading2,
+      { opacity: 0, y: -60 }, // start above
+      {
+        opacity: 1,
+        y: 0, // settle into place
+        ease: "power2.out",
+        scrollTrigger: {
+          trigger: heading2,
+          start: "top 70%",
+          end: "top 40%",
+          scrub: 7,
+          scroller: document.body,
+          markers: false,
+        },
+      }
+    );
+  }
 });
 
 // ----------------------------------------------------------------------------------------------------------
