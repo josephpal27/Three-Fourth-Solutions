@@ -335,7 +335,6 @@ body {
   display: flex;
   box-shadow: 6px -6px 10px 0px #d1d1d140;
 }
-
 .trusted-by .clients-slider img {
   flex: 0 0 20%; /* 5 images in viewport */
   max-width: 18%;
@@ -345,7 +344,7 @@ body {
 /* Media Queries */
 @media screen and (min-width: 1230px) and (max-width: 1399px){
   .trusted-by{
-    padding: 3.5rem 5% 3rem 5%;
+    padding: 3.5rem 5% 4rem 5%;
   }
   .trusted-by h2{
     font-size: calc(5.5rem + 0.5vw);
@@ -353,11 +352,23 @@ body {
   .trusted-by-card-row .trust-card{
     margin-bottom: 2.2rem;
   }
+  .trusted-by h3{
+    font-size: calc(3.5rem + 0.5vw);
+    margin-top: 2.2rem;
+  }
+  .trusted-by .clients-slider {
+    margin-top: 3rem;
+    border-radius: 32px;
+    box-shadow: 5.5px -5.5px 10px 0px #d1d1d140;
+  }
+  .trusted-by .clients-slider img {
+    max-width: 17%;
+  }
 }
 
 @media screen and (min-width: 992px) and (max-width: 1229px){
   .trusted-by{
-    padding: 3rem 5% 2.5rem 5%;
+    padding: 3rem 5% 3.5rem 5%;
   }
   .trusted-by h2{
     font-size: calc(5rem + 0.5vw);
@@ -367,6 +378,18 @@ body {
   }
   .trusted-by-card-row .trust-card{
     margin-bottom: 1.85rem;
+  }
+  .trusted-by h3{
+    font-size: calc(3rem + 0.5vw);
+    margin-top: 2rem;
+  }
+  .trusted-by .clients-slider {
+    margin-top: 2.5rem;
+    border-radius: 30px;
+    box-shadow: 5px -5px 10px 0px #d1d1d140;
+  }
+  .trusted-by .clients-slider img {
+    max-width: 17%;
   }
 }
 /* Trusted By End */
