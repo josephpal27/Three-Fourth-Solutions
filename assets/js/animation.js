@@ -108,7 +108,7 @@ document.addEventListener("DOMContentLoaded", () => {
         ease: "power2.out",
         scrollTrigger: {
           trigger: heading2,
-          start: "top 50%",
+          start: "top 60%",
           end: "top 10%",
           scrub: 5,
           scroller: document.body,
@@ -218,7 +218,7 @@ document.addEventListener("DOMContentLoaded", () => {
       ease: "power3.out",
       scrollTrigger: {
         trigger: teamRowThree,
-        start: "top 20%",
+        start: "top 30%",
         end: "top -20%",
         scrub: 7,  // ties animation to scroll (works up & down)
         scroller: document.body, // needed if using Lenis

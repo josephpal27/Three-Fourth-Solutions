@@ -24,6 +24,17 @@ body {
   background-color: #808080;
   border-radius: 50px;
 }
+@media screen and (min-width: 1230px) and (max-width: 1399px){
+  ::-webkit-scrollbar{
+    width: 8.5px;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1229px){
+  ::-webkit-scrollbar{
+    width: 8px;
+  }
+}
 
 /* Stacking Sections Start */
 .stacking-sections-container{
@@ -477,5 +488,58 @@ body {
 }
 .meet-the-team-row-content .team-card a:hover{
   color: #fcb913;
+}
+
+/* Media Queries */
+@media screen and (min-width: 1230px) and (max-width: 1399px){
+  .meet-the-team{
+    padding: 3.5rem 5% 2rem 5%;
+  }
+  .meet-the-team h4{
+    font-size: calc(5rem + 0.5vw);
+    margin-bottom: 1.7rem;
+  }
+  .meet-the-team-row{
+    margin-bottom: 3rem;
+  }
+  .meet-the-team-row-head p{
+    font-size: calc(1.7rem + 0.5vw);
+  }
+  .meet-the-team-row-content{
+    margin-top: 2rem;
+  }
+  .meet-the-team-row-content .team-card{
+    padding: 2.8rem 2.8rem 1.8rem 2.8rem;
+  }
+  .meet-the-team-row-content .team-card a{
+    font-size: calc(1.1rem + 0.5vw);
+    margin-top: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1229px){
+  .meet-the-team{
+    padding: 2.8rem 5% 2rem 5%;
+  }
+  .meet-the-team h4{
+    font-size: calc(4.5rem + 0.5vw);
+    margin-bottom: 1.3rem;
+  }
+  .meet-the-team-row{
+    margin-bottom: 2.4rem;
+  }
+  .meet-the-team-row-head p{
+    font-size: calc(1.5rem + 0.5vw);
+  }
+  .meet-the-team-row-content{
+    margin-top: 1.5rem;
+  }
+  .meet-the-team-row-content .team-card{
+    padding: 2.5rem 2.5rem 1.5rem 2.5rem;
+  }
+  .meet-the-team-row-content .team-card a{
+    font-size: calc(1rem + 0.5vw);
+    margin-top: 1.4rem;
+  }
 }
 /* Meet The Team End */
