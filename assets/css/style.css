@@ -16,6 +16,15 @@ body {
   color: #fff;
 }
 
+::-webkit-scrollbar{
+  width: 10px;
+  background-color: transparent;
+}
+::-webkit-scrollbar-thumb{
+  background-color: #808080;
+  border-radius: 50px;
+}
+
 /* Stacking Sections Start */
 .stacking-sections-container{
     overflow: hidden;

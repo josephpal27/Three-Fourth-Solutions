@@ -108,9 +108,9 @@ document.addEventListener("DOMContentLoaded", () => {
         ease: "power2.out",
         scrollTrigger: {
           trigger: heading2,
-          start: "top 70%",
-          end: "top 40%",
-          scrub: 7,
+          start: "top 50%",
+          end: "top 10%",
+          scrub: 5,
           scroller: document.body,
           markers: false,
         },
@@ -144,6 +144,89 @@ document.addEventListener("DOMContentLoaded", () => {
       x: gsap.utils.unitize(x => parseFloat(x) % -totalWidth) // loop seamlessly
     }
   });
+});
+
+
+// Meet The Team
+document.addEventListener("DOMContentLoaded", () => {
+  let section = document.querySelector("#home-stack-section-4");
+  let heading = section.querySelector("h4");
+  let teamRowOne = section.querySelector("#meet-the-team-row-1");
+  let teamRowTwo = section.querySelector("#meet-the-team-row-2");
+  let teamRowThree = section.querySelector("#meet-the-team-row-3");
+
+  gsap.fromTo(
+    heading,
+    { opacity: 0, y: 70 },
+    {
+      opacity: 1,
+      y: 0,
+      ease: "power3.out",
+      scrollTrigger: {
+        trigger: section,
+        start: "top 80%",
+        end: "top 35%",
+        scrub: 3,  // ties animation to scroll (works up & down)
+        scroller: document.body, // needed if using Lenis
+        markers: false,
+      },
+    }
+  );
+
+  gsap.fromTo(
+    teamRowOne,
+    { opacity: 0, x: 120 },
+    {
+      opacity: 1,
+      x: 0,
+      ease: "power3.out",
+      scrollTrigger: {
+        trigger: teamRowOne,
+        start: "top 70%",
+        end: "top 20%",
+        scrub: 5,  // ties animation to scroll (works up & down)
+        scroller: document.body, // needed if using Lenis
+        markers: false,
+      },
+    }
+  );
+
+  gsap.fromTo(
+    teamRowTwo,
+    { opacity: 0, x: -120 },
+    {
+      opacity: 1,
+      x: 0,
+      ease: "power3.out",
+      scrollTrigger: {
+        trigger: teamRowTwo,
+        start: "top 70%",
+        end: "top 10%",
+        scrub: 5,  // ties animation to scroll (works up & down)
+        scroller: document.body, // needed if using Lenis
+        markers: false,
+      },
+    }
+  );
+
+  gsap.fromTo(
+    teamRowThree,
+    { opacity: 0, x: 120 },
+    {
+      opacity: 1,
+      x: 0,
+      ease: "power3.out",
+      scrollTrigger: {
+        trigger: teamRowThree,
+        start: "top 20%",
+        end: "top -20%",
+        scrub: 7,  // ties animation to scroll (works up & down)
+        scroller: document.body, // needed if using Lenis
+        markers: false,
+      },
+    }
+  );
+
 });
 
 // ----------------------------------------------------------------------------------------------------------
