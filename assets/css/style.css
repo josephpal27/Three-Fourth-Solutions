@@ -43,9 +43,8 @@ body {
 #home-stack-section-4{
     border-top-left-radius: 60px;
     border-top-right-radius: 60px;
-    background-color: #111;
+    background: linear-gradient(to bottom, #222, #111 25%);
     box-shadow: 0px -7px 10px 0px #fcba1340;
-    /* min-height: 100vh; */
 }
 /* Stacking Sections End */
 
@@ -209,6 +208,11 @@ body {
   overflow: hidden;
 }
 .banner video{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.banner img{
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -409,3 +413,60 @@ body {
   }
 }
 /* Trusted By End */
+
+/* Meet The Team Start */
+.meet-the-team{
+  padding: 4rem 5% 2rem 5%;
+}
+.meet-the-team h4{
+  color: #fff;
+  font-size: calc(5.5rem + 0.5vw);
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+.meet-the-team h4 span{
+  color: #fcb913;
+}
+.meet-the-team-row{
+  margin-bottom: 3.5rem;
+}
+.meet-the-team-row-head p{
+  color: #fff;
+  font-size: calc(2rem + 0.5vw);
+  font-weight: 500;
+  width: max-content;
+  transition: color 0.3s ease;
+}
+.meet-the-team-row-head p:hover{
+  color: #fcb913;
+}
+.meet-the-team-row-content{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2.5rem;
+}
+.meet-the-team-row-content .team-card{
+  width: 28%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  padding: 3rem 3rem 2rem 3rem;
+}
+.meet-the-team-row-content .team-card img{
+  width: 100%;
+  border-radius: 5px;
+}
+.meet-the-team-row-content .team-card a{
+  color: #fff;
+  font-size: calc(1.1rem + 0.5vw);
+  margin-top: 1.5rem;
+  display: block;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.meet-the-team-row-content .team-card a:hover{
+  color: #fcb913;
+}
+/* Meet The Team End */
