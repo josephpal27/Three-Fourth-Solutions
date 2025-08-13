@@ -115,3 +115,19 @@ VanillaTilt.init(document.querySelectorAll(".trusted-by-card-row .trust-card"), 
 });
 
 // ---------------------------------------------------------------------------------------------------------------
+
+// Refresh ScrollTrigger after all images are loaded
+window.addEventListener("load", function () {
+  setTimeout(() => {
+    ScrollTrigger.refresh();
+  }, 200); // small delay for layout stability
+});
+
+// Refresh ScrollTrigger on each lazy-loaded image
+document.querySelectorAll('.clients-slider img').forEach(img => {
+  img.addEventListener('load', () => {
+    ScrollTrigger.refresh();
+  });
+});
+
+// ---------------------------------------------------------------------------------------------------------------
