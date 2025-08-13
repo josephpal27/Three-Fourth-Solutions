@@ -130,4 +130,10 @@ document.querySelectorAll('.clients-slider img').forEach(img => {
   });
 });
 
+document.querySelectorAll('.meet-the-team img').forEach(img => {
+  img.addEventListener('load', () => {
+    ScrollTrigger.refresh();
+  });
+});
+
 // ---------------------------------------------------------------------------------------------------------------

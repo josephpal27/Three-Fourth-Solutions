@@ -65,7 +65,6 @@ body {
     border-top-right-radius: 60px;
     background: linear-gradient(to bottom, #222, #111 25%);
     box-shadow: 0px -7px 10px 0px #fcba1340;
-    height: 300vh;
 }
 #home-stack-section-5{
     border-top-left-radius: 60px;
@@ -248,7 +247,7 @@ body {
 
 /* Three Fourth Network Start */
 .three-fourth-network{
-    padding: 5rem 5% 2rem 5%;
+    padding: 5rem 5% 3rem 5%;
 }
 .three-fourth-network .three-fourth-network-top{
   display: flex;
@@ -294,7 +293,7 @@ body {
 /* Media Queries */
 @media screen and (min-width: 1230px) and (max-width: 1399px){
   .three-fourth-network {
-    padding: 4.5rem 5% 1.5rem 5%;
+    padding: 4.5rem 5% 2rem 5%;
   }
   .three-fourth-network .three-fourth-network-content h1 {
     font-size: calc(5.5rem + 0.5vw);
@@ -330,7 +329,7 @@ body {
 
 /* Trusted By Start */
 .trusted-by{
-  padding: 4rem 5% 4.5rem 5%;
+  padding: 4rem 5% 5.5rem 5%;
 }
 .trusted-by h2{
   color: #fff;
@@ -382,7 +381,7 @@ body {
 /* Media Queries */
 @media screen and (min-width: 1230px) and (max-width: 1399px){
   .trusted-by{
-    padding: 3.5rem 5% 4rem 5%;
+    padding: 3.5rem 5% 6rem 5%;
   }
   .trusted-by h2{
     font-size: calc(5.5rem + 0.5vw);
@@ -406,7 +405,7 @@ body {
 
 @media screen and (min-width: 992px) and (max-width: 1229px){
   .trusted-by{
-    padding: 3rem 5% 3.5rem 5%;
+    padding: 3rem 5% 5rem 5%;
   }
   .trusted-by h2{
     font-size: calc(5rem + 0.5vw);
@@ -434,7 +433,7 @@ body {
 
 /* Meet The Team Start */
 .meet-the-team{
-  padding: 4rem 5% 2rem 5%;
+  padding: 4rem 5% 5rem 5%;
 }
 .meet-the-team h4{
   color: #fff;
@@ -491,7 +490,7 @@ body {
 /* Media Queries */
 @media screen and (min-width: 1230px) and (max-width: 1399px){
   .meet-the-team{
-    padding: 3.5rem 5% 2rem 5%;
+    padding: 3.5rem 5% 4.5rem 5%;
   }
   .meet-the-team h4{
     font-size: calc(5rem + 0.5vw);
@@ -517,7 +516,7 @@ body {
 
 @media screen and (min-width: 992px) and (max-width: 1229px){
   .meet-the-team{
-    padding: 2.8rem 5% 2rem 5%;
+    padding: 2.8rem 5% 4.5rem 5%;
   }
   .meet-the-team h4{
     font-size: calc(4.5rem + 0.5vw);

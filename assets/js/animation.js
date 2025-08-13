@@ -218,8 +218,8 @@ document.addEventListener("DOMContentLoaded", () => {
       ease: "power3.out",
       scrollTrigger: {
         trigger: teamRowThree,
-        start: "top 30%",
-        end: "top -20%",
+        start: "top 50%",
+        end: "top 0%",
         scrub: 7,  // ties animation to scroll (works up & down)
         scroller: document.body, // needed if using Lenis
         markers: false,
