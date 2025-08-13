@@ -1,3 +1,15 @@
+// GSAP + ScrollSmoother Setup
+gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
+
+ScrollSmoother.create({
+  wrapper: "#smooth-wrapper", // outer container
+  content: "#smooth-content", // scrollable content
+  smooth: 1,  // scroll speed (lower = faster, higher = smoother)
+  effects: true // enables data-speed / data-lag parallax effects
+});
+
+// ---------------------------------------------------------------------------------------------------------------
+
 // Functionality For Stacking Sections Using GSAP
 document.addEventListener("DOMContentLoaded", () => {
   const cards = gsap.utils.toArray(".stack-section");
@@ -91,26 +103,6 @@ document.addEventListener("DOMContentLoaded", function() {
     preloader.style.display = "none";
   }
 });
-
-// ---------------------------------------------------------------------------------------------------------------
-
-// Lenis Smooth Scroll Setup
-const lenis = new Lenis({
-  duration: 1.2,  // smoothness speed
-  easing: (t) => 1 - Math.pow(1 - t, 4), // ease out quart
-  smooth: true,
-  smoothTouch: false,
-});
-
-// Update GSAP ScrollTrigger on Lenis scroll
-lenis.on('scroll', ScrollTrigger.update);
-
-// Lenis RAF loop
-function raf(time) {
-  lenis.raf(time);
-  requestAnimationFrame(raf);
-}
-requestAnimationFrame(raf);
 
 // ---------------------------------------------------------------------------------------------------------------
 
