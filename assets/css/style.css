@@ -72,6 +72,12 @@ body {
     background-color: #222;
     box-shadow: 0px -7px 10px 0px #fcba1340;
 }
+#home-stack-section-6{
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+    background-color: #111;
+    box-shadow: 0px -7px 10px 0px #fcba1340;
+}
 /* Stacking Sections End */
 
 /* Custom Cursor Start */
@@ -433,7 +439,7 @@ body {
 
 /* Meet The Team Start */
 .meet-the-team{
-  padding: 4rem 5% 5rem 5%;
+  padding: 4rem 5% 6rem 5%;
 }
 .meet-the-team h4{
   color: #fff;
@@ -490,7 +496,7 @@ body {
 /* Media Queries */
 @media screen and (min-width: 1230px) and (max-width: 1399px){
   .meet-the-team{
-    padding: 3.5rem 5% 4.5rem 5%;
+    padding: 3.5rem 5% 6rem 5%;
   }
   .meet-the-team h4{
     font-size: calc(5rem + 0.5vw);
@@ -516,7 +522,7 @@ body {
 
 @media screen and (min-width: 992px) and (max-width: 1229px){
   .meet-the-team{
-    padding: 2.8rem 5% 4.5rem 5%;
+    padding: 2.8rem 5% 6.5rem 5%;
   }
   .meet-the-team h4{
     font-size: calc(4.5rem + 0.5vw);
@@ -540,3 +546,107 @@ body {
   }
 }
 /* Meet The Team End */
+
+/* Hall of Fame Start */
+.hall-of-fame{
+  padding: 4rem 5% 4rem 5%;
+}
+.hall-of-fame h5{
+  color: #fff;
+  font-size: calc(5.5rem + 0.5vw);
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+.hall-of-fame h5 span{
+  color: #fcb913;
+}
+.hall-of-fame .awards-slider{
+  width: 100%;
+  margin-top: 4rem;
+  padding-bottom: 2rem;
+}
+.hall-of-fame .award-box {
+  text-align: center;
+  padding: 0.5rem 1.7rem;
+}
+.hall-of-fame .award-box img{
+  width: 100%;
+  height: auto;
+  display: block;
+  background-color: #313131;
+  border-radius: 50%;
+  padding: 1.8rem;
+  box-shadow: rgba(255, 255, 255, 0.374) 0px 3px 10px 0px;
+  transition: all 0.3s ease-in-out;
+}
+.hall-of-fame .award-box img:hover{
+  background-color: #3b3b3b;
+  box-shadow: rgba(255, 238, 0, 0.374) 0px 3px 10px 0px;
+}
+.hall-of-fame .award-box p{
+  margin-top: 1rem;
+  font-size: calc(0.7rem + 0.5vw);
+  color: #fff;
+}
+.hall-of-fame .swiper-pagination {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  margin-top: 1rem;
+}
+.hall-of-fame .swiper-pagination-bullet {
+  width: 14px;
+  height: 14px;
+  background: #666;
+  opacity: 1;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+.hall-of-fame .swiper-pagination-bullet-active {
+  background: #fcb913;
+}
+/* Hall of Fame End */
+
+/* .awards-controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    margin-top: 20px;
+}
+
+.awards-controls .swiper-button-prev,
+.awards-controls .swiper-button-next {
+    position: static;
+    width: 40px;
+    height: 40px;
+    background: #ffc107;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+    margin-top: 1rem;
+}
+
+.awards-controls .swiper-button-prev:hover,
+.awards-controls .swiper-button-next:hover {
+    background: #e0a800;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+}
+.awards-controls .swiper-button-prev::after,
+.awards-controls .swiper-button-next::after {
+    font-size: 16px;
+    font-weight: bold;
+}
+.awards-controls .swiper-pagination {
+    position: static;
+    display: flex;
+    align-items: center;
+} */

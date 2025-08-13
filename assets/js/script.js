@@ -1,12 +1,19 @@
-// GSAP + ScrollSmoother Setup
-gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
-
-ScrollSmoother.create({
-  wrapper: "#smooth-wrapper", // outer container
-  content: "#smooth-content", // scrollable content
-  smooth: 1,  // scroll speed (lower = faster, higher = smoother)
-  effects: true // enables data-speed / data-lag parallax effects
+// Initialize Lenis
+const lenis = new Lenis({
+  duration: 1.2, // smoothness speed
+  easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // ease-out
+  smoothWheel: true,
+  smoothTouch: false
 });
+
+// Use Lenis with GSAP's ScrollTrigger
+function raf(time) {
+  lenis.raf(time);
+  requestAnimationFrame(raf);
+}
+requestAnimationFrame(raf);
+
+lenis.on('scroll', ScrollTrigger.update);
 
 // ---------------------------------------------------------------------------------------------------------------
 
@@ -59,11 +66,11 @@ document.addEventListener("DOMContentLoaded", () => {
       mouseX = e.clientX;
       mouseY = e.clientY;
       // make visible on first mousemove
-      if (!isVisible) {
-        isVisible = true;
-        dot.classList.remove("is-hidden");
-        ring.classList.remove("is-hidden");
-      }
+      // if (!isVisible) {
+      //   isVisible = true;
+      //   dot.classList.remove("is-hidden");
+      //   ring.classList.remove("is-hidden");
+      // }
     },
     { passive: true }
   );
@@ -112,6 +119,38 @@ VanillaTilt.init(document.querySelectorAll(".trusted-by-card-row .trust-card"), 
     speed: 400,
     glare: true,
     "max-glare": 0.2
+});
+
+// ---------------------------------------------------------------------------------------------------------------
+
+// Functionality For Home Page Awards Slider
+ const awardsSwiper = new Swiper(".awards-slider", {
+  slidesPerView: 4,
+  loop: true,
+  speed: 600,
+  autoplay: {
+    delay: 2000,
+    disableOnInteraction: false
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true
+  },
+  breakpoints: {
+    992: { slidesPerView: 4 },
+    768: { slidesPerView: 3 },
+    480: { slidesPerView: 2 },
+    0: { slidesPerView: 1 }
+  }
+});
+
+// Make sure autoplay starts even if something interrupted it
+awardsSwiper.autoplay.start();
+
+// Restart autoplay after ScrollTrigger refresh
+ScrollTrigger.addEventListener("refresh", () => {
+  awardsSwiper.update();
+  awardsSwiper.autoplay.start();
 });
 
 // ---------------------------------------------------------------------------------------------------------------
