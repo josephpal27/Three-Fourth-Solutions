@@ -597,15 +597,83 @@ body {
   margin-top: 1rem;
 }
 .hall-of-fame .swiper-pagination-bullet {
-  width: 14px;
-  height: 14px;
+  width: 15px;
+  height: 15px;
   background: #666;
   opacity: 1;
   border-radius: 3px;
   transition: all 0.3s ease;
 }
+.hall-of-fame .swiper-pagination-bullet:hover {
+  background: #535353;
+}
 .hall-of-fame .swiper-pagination-bullet-active {
-  background: #fcb913;
+  background: #fcb913 !important;
+}
+
+/* Media Queries */
+@media screen and (min-width: 1230px) and (max-width: 1399px){
+  .hall-of-fame{
+    padding: 3.5rem 5% 2rem 5%;
+  }
+  .hall-of-fame h5{
+    font-size: calc(5rem + 0.5vw);
+    margin-bottom: 1.7rem;
+  }
+  .hall-of-fame .awards-slider{
+    margin-top: 3.5rem;
+    padding-bottom: 2rem;
+  }
+  .hall-of-fame .award-box {
+    padding: 0.5rem 1.7rem;
+  }
+  .hall-of-fame .award-box img{
+    padding: 1.5rem;
+  }
+  .hall-of-fame .award-box p{
+    margin-top: 1.2rem;
+    font-size: calc(0.63rem + 0.5vw);
+  }
+  .hall-of-fame .swiper-pagination {
+    gap: 6px;
+    margin-top: 1.5rem;
+  }
+  .hall-of-fame .swiper-pagination-bullet {
+    width: 15px;
+    height: 15px;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1229px){
+  .hall-of-fame{
+    padding: 3rem 5% 1rem 5%;
+  }
+  .hall-of-fame h5{
+    font-size: calc(4.5rem + 0.5vw);
+    margin-bottom: 1.5rem;
+  }
+  .hall-of-fame .awards-slider{
+    margin-top: 2.5rem;
+    padding-bottom: 2.2rem;
+  }
+  .hall-of-fame .award-box {
+    padding: 0.5rem 1.4rem;
+  }
+  .hall-of-fame .award-box img{
+    padding: 1.3rem;
+  }
+  .hall-of-fame .award-box p{
+    margin-top: 1.2rem;
+    font-size: calc(0.58rem + 0.5vw);
+  }
+  .hall-of-fame .swiper-pagination {
+    gap: 3px;
+    margin-top: 1.5rem;
+  }
+  .hall-of-fame .swiper-pagination-bullet {
+    width: 13px;
+    height: 13px;
+  }
 }
 /* Hall of Fame End */
 
