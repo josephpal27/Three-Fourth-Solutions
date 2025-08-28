@@ -581,7 +581,7 @@ body {
 }
 .hall-of-fame .award-box img:hover{
   background-color: #3b3b3b;
-  box-shadow: rgba(255, 238, 0, 0.374) 0px 3px 10px 0px;
+  box-shadow: #ffc02e8e 0px 3px 10px 0px;
 }
 .hall-of-fame .award-box p{
   margin-top: 1rem;
@@ -718,3 +718,114 @@ body {
     display: flex;
     align-items: center;
 } */
+
+
+/* TFS Network Logos Start */
+.tfs-network-logos{
+  padding: 4rem 5% 7.5rem 5%;
+}
+.tfs-network-logos h6{
+  color: #fff;
+  font-size: calc(5.5rem + 0.5vw);
+  font-weight: 700;
+}
+.tfs-network-logos h6 span{
+  color: #fcb913;
+}
+.tfs-network-logos p{
+  color: #fff;
+  font-size: calc(2rem + 0.5vw);
+  font-weight: 500;
+  width: max-content;
+  transition: color 0.3s ease;
+}
+.tfs-network-logos p:hover{
+  color: #fcb913;
+}
+.network-logo-row{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 5rem;
+}
+.network-logo-row .network-logo-box{
+  width: 24%;
+  background-color: #1e1e1e;
+  border-radius: 15px;
+  padding: 3rem;
+  transition: background-color 0.1s ease, box-shadow 0.3s ease;
+  position: relative;
+}
+.network-logo-row .network-logo-box:hover{
+  background-color: #1b1b1b;
+  box-shadow: 0 0 10px #ffcd4f84;
+  box-shadow: #fdb71558 0px 3px 6px, #fdb71558 0px 3px 6px;
+}
+.network-logo-row .network-logo-box img{
+  width: 100%;
+  filter: grayscale(100%) brightness(200%) contrast(100%);
+  transition: filter 0.2s ease-in-out;
+}
+.network-logo-row .network-logo-box:hover img{
+  filter: none;
+}
+.network-logo-row .network-logo-box:last-child img{
+  filter: none;
+}
+.network-logo-row .network-logo-box span{
+  position: absolute;
+  top: 1.5rem;
+  left: 2rem;
+  color: #fff;
+  font-size: calc(1.5rem + 0.5vw);
+  font-weight: 600;
+  display: block;
+}
+
+/* Media Queries */
+@media screen and (min-width: 1230px) and (max-width: 1399px){
+  .tfs-network-logos{
+    padding: 3.5rem 5% 7rem 5%;
+  }
+  .tfs-network-logos h6{
+    font-size: calc(5rem + 0.5vw);
+  }
+  .tfs-network-logos p{
+    font-size: calc(1.7rem + 0.5vw);
+  }
+  .network-logo-row{
+    margin-top: 4.5rem;
+  }
+  .network-logo-row .network-logo-box{
+    padding: 2.8rem;
+  }
+  .network-logo-row .network-logo-box span{
+    top: 1.2rem;
+    left: 1.8rem;
+    font-size: calc(1.4rem + 0.5vw);
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1229px){
+  .tfs-network-logos{
+    padding: 3.5rem 5% 6rem 5%;
+  }
+  .tfs-network-logos h6{
+    font-size: calc(4.5rem + 0.5vw);
+  }
+  .tfs-network-logos p{
+    font-size: calc(1.5rem + 0.5vw);
+  }
+  .network-logo-row{
+    margin-top: 4rem;
+  }
+  .network-logo-row .network-logo-box{
+    padding: 2.5rem;
+  }
+  .network-logo-row .network-logo-box span{
+    top: 1rem;
+    left: 1.6rem;
+    font-size: calc(1.3rem + 0.5vw);
+  }
+}
+/* TFS Network Logos End */
