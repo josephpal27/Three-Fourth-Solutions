@@ -155,6 +155,27 @@ ScrollTrigger.addEventListener("refresh", () => {
 
 // ---------------------------------------------------------------------------------------------------------------
 
+// The TFS Network Story Sutra Logo Hover Effect
+const logoBox = document.getElementById("story-sutra-logo-box");
+const logoImg = logoBox.querySelector("img");
+
+function changeLogo(newSrc) {
+  logoImg.classList.add("fade");
+  setTimeout(() => {
+    logoImg.src = newSrc;
+    logoImg.classList.remove("fade");
+  }, 150); // Match CSS transition duration
+}
+
+logoBox.addEventListener("mouseenter", () => {
+  changeLogo("assets/images/logo/story-sutra.webp");
+});
+logoBox.addEventListener("mouseleave", () => {
+  changeLogo("assets/images/logo/story-sutra-black.webp");
+});
+
+// ---------------------------------------------------------------------------------------------------------------
+
 // Refresh ScrollTrigger after all images are loaded
 window.addEventListener("load", function () {
   setTimeout(() => {
@@ -170,6 +191,17 @@ document.querySelectorAll('.clients-slider img').forEach(img => {
 });
 
 document.querySelectorAll('.meet-the-team img').forEach(img => {
+  img.addEventListener('load', () => {
+    ScrollTrigger.refresh();
+  });
+});
+
+document.querySelectorAll('.hall-of-fame img').forEach(img => {
+  img.addEventListener('load', () => {
+    ScrollTrigger.refresh();
+  });
+});
+document.querySelectorAll('.tfs-network-logos img').forEach(img => {
   img.addEventListener('load', () => {
     ScrollTrigger.refresh();
   });
