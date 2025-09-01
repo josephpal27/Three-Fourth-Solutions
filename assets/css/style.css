@@ -887,4 +887,211 @@ body {
   color: #fff;
   background-color: #fcb913;
 }
+
+/* Media Queries */
+@media screen and (min-width: 1230px) and (max-width: 1399px){
+  .work-together{
+    padding: 5rem 5% 6rem 5%;
+  }
+  .work-together span{
+    font-size: calc(1.65rem + 0.5vw);
+    margin-bottom: 1.3rem;
+  }
+  .work-together p{
+    font-size: calc(8.65rem + 0.5vw);
+  }
+  .work-together .btn-row{
+    margin-top: 2.5rem;
+  }
+  .work-together .btn-row button{
+    padding: 1.7rem 2.5rem;
+    font-size: calc(0.8rem + 0.5vw);
+  }
+  .work-together .btn-row a:last-child button{
+    padding: 1.6rem 2.05rem;
+    font-size: calc(1rem + 0.5vw);
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1229px){
+  .work-together{
+    padding: 4.5rem 5% 5.5rem 5%;
+  }
+  .work-together span{
+    font-size: calc(1.4rem + 0.5vw);
+    margin-bottom: 1.2rem;
+  }
+  .work-together p{
+    font-size: calc(7.7rem + 0.5vw);
+  }
+  .work-together .btn-row{
+    margin-top: 2rem;
+  }
+  .work-together .btn-row button{
+    padding: 1.4rem 2.2rem;
+    font-size: calc(0.7rem + 0.5vw);
+  }
+  .work-together .btn-row a:last-child button{
+    padding: 1.3rem 1.75rem;
+    font-size: calc(0.9rem + 0.5vw);
+  }
+}
 /* Work Together End */
+
+/* Footer Start */
+footer{
+  background-color: #111;
+  border-top-left-radius: 60px;
+  border-top-right-radius: 60px;
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 5% 2rem 3%;
+}
+footer .foot-logo{
+  width: 28%;
+  padding: 5rem;
+  border-right: 1px solid #313131;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer .foot-logo img{
+  width: 100%;
+}
+footer .foot-content{
+  width: 67%;
+  padding: 2rem 0 0 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+footer .foot-content-box{
+  width: 30%;
+  margin-bottom: 2rem;
+}
+footer .foot-content-box span{
+  display: block;
+  color: #fff;
+  font-size: calc(1.8rem + 0.5vw);
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+footer .foot-content-box a,
+footer .foot-content-box p{
+  display: block;
+  color: #fff;
+  font-size: calc(0.85rem + 0.5vw);
+  font-weight: 500;
+  margin-bottom: 0.4rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+footer .foot-content-box a{
+  width: max-content;
+}
+footer .foot-content-box a:hover{
+  color: #fcb913;
+  text-decoration: underline;
+}
+footer .foot-content-box .bi-envelope-check-fill{
+  font-size: calc(1.5rem + 0.5vw);
+}
+footer .social-btns{
+  display: flex;
+  gap: 1rem;
+}
+footer .social-btns a{
+  background-color: #282828;
+  width: 45px;
+  height: 45px;
+  text-align: center;
+  line-height: 45px;
+  display: block;
+  color: #fff;
+  font-size: calc(0.8rem + 0.5vw);
+  border-top-right-radius: 12px;
+  border-bottom-left-radius: 12px;
+  transition: all 0.2s ease;
+}
+footer .social-btns a:hover{
+  background-color: #fcb913;
+  color: #fff;
+}
+
+/* Media Queries */
+@media screen and (min-width: 1230px) and (max-width: 1399px){
+  footer{
+    padding: 2rem 5% 2rem 3%;
+  }
+  footer .foot-logo{
+    padding: 4rem;
+  }
+  footer .foot-content{
+    padding: 1.8rem 0 0 0;
+  }
+  footer .foot-content-box{
+    margin-bottom: 1.5rem;
+  }
+  footer .foot-content-box span{
+    font-size: calc(1.6rem + 0.5vw);
+    margin-bottom: 0.8rem;
+  }
+  footer .foot-content-box a,
+  footer .foot-content-box p{
+    font-size: calc(0.8rem + 0.5vw);
+    margin-bottom: 0.35rem;
+  }
+  footer .foot-content-box .bi-envelope-check-fill{
+    font-size: calc(1.3rem + 0.5vw);
+  }
+  footer .social-btns{
+    gap: 1rem;
+  }
+  footer .social-btns a{
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    font-size: calc(0.75rem + 0.5vw);
+    border-top-right-radius: 11px;
+    border-bottom-left-radius: 11px;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1229px){
+  footer{
+    padding: 1.8rem 5% 1.8rem 3%;
+  }
+  footer .foot-logo{
+    padding: 3rem;
+  }
+  footer .foot-content{
+    padding: 1.6rem 0 0 0;
+  }
+  footer .foot-content-box{
+    margin-bottom: 1.3rem;
+  }
+  footer .foot-content-box span{
+    font-size: calc(1.4rem + 0.5vw);
+    margin-bottom: 0.7rem;
+  }
+  footer .foot-content-box a,
+  footer .foot-content-box p{
+    font-size: calc(0.7rem + 0.5vw);
+    margin-bottom: 0.3rem;
+  }
+  footer .foot-content-box .bi-envelope-check-fill{
+    font-size: calc(1.1rem + 0.5vw);
+  }
+  footer .social-btns{
+    gap: 0.8rem;
+  }
+  footer .social-btns a{
+    width: 38px;
+    height: 38px;
+    line-height: 38px;
+    font-size: calc(0.67rem + 0.5vw);
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+}
+/* Footer End */
