@@ -783,9 +783,6 @@ body {
   transition: opacity 0.3s ease;
   opacity: 1;
 }
-.network-logo-row .network-logo-box:last-child img.fade{
-  opacity: 0;
-}
 .network-logo-row .network-logo-box span{
   position: absolute;
   top: 1.5rem;

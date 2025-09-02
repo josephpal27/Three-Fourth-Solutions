@@ -154,11 +154,7 @@ const logoBox = document.getElementById("story-sutra-logo-box");
 const logoImg = logoBox.querySelector("img");
 
 function changeLogo(newSrc) {
-  logoImg.classList.add("fade");
-  setTimeout(() => {
     logoImg.src = newSrc;
-    logoImg.classList.remove("fade");
-  }, 150); // Match CSS transition duration
 }
 
 logoBox.addEventListener("mouseenter", () => {

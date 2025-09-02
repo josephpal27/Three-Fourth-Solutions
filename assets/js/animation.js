@@ -85,8 +85,10 @@ document.addEventListener("DOMContentLoaded", () => {
         trigger: img,
         start: "top 95%",
         end: "top 60%",
-        toggleActions: "play none none reverse",
-        markers: false
+        // toggleActions: "play none none reverse",
+        toggleActions: "play none none none", // Play once only
+        once: true, // ensures it won't run again
+        markers: false,
       }
     });
   });
@@ -112,6 +114,7 @@ document.addEventListener("DOMContentLoaded", () => {
           end: "top 10%",
           scrub: 5,
           scroller: document.body,
+          once: true, // ensures it won't run again
           markers: false,
         },
       }
@@ -186,6 +189,7 @@ document.addEventListener("DOMContentLoaded", () => {
         end: "top 20%",
         scrub: 5,  // ties animation to scroll (works up & down)
         scroller: document.body, // needed if using Lenis
+        once: true, // ensures it won't run again
         markers: false,
       },
     }
@@ -204,6 +208,7 @@ document.addEventListener("DOMContentLoaded", () => {
         end: "top 10%",
         scrub: 5,  // ties animation to scroll (works up & down)
         scroller: document.body, // needed if using Lenis
+        once: true, // ensures it won't run again
         markers: false,
       },
     }
@@ -222,6 +227,7 @@ document.addEventListener("DOMContentLoaded", () => {
         end: "top 0%",
         scrub: 5,  // ties animation to scroll (works up & down)
         scroller: document.body, // needed if using Lenis
+        once: true, // ensures it won't run again
         markers: false,
       },
     }
