@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // ---------------------------------------------------------------------------------------------------------------
 
-// Functionality For CustomCursor Animation
+// Functionality For Custom Cursor Animation
 (function () {
   const dot = document.getElementById("cursor-dot");
   const ring = document.getElementById("cursor-ring");
@@ -65,12 +65,6 @@ document.addEventListener("DOMContentLoaded", () => {
     (e) => {
       mouseX = e.clientX;
       mouseY = e.clientY;
-      // make visible on first mousemove
-      // if (!isVisible) {
-      //   isVisible = true;
-      //   dot.classList.remove("is-hidden");
-      //   ring.classList.remove("is-hidden");
-      // }
     },
     { passive: true }
   );
@@ -104,7 +98,7 @@ document.addEventListener("DOMContentLoaded", function() {
     window.addEventListener("load", function() {
       setTimeout(() => {
         preloader.classList.add("hide");
-      }, 2500); // slight delay for effect
+      }, 100); // slight delay for effect
     });
   } else {
     preloader.style.display = "none";
