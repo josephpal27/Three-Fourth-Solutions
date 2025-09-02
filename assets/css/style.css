@@ -7,7 +7,7 @@ html {
   scroll-behavior: unset !important; 
 }
 body {
-  background-color: #111;
+  background-color: #000;
   font-family: "Anek Bangla", sans-serif;
 }
 
@@ -155,11 +155,18 @@ body {
   opacity: 0;
   visibility: hidden;
 }
+
+#home-stack-section-1{
+  clip-path: circle(0% at center);
+  transition: clip-path 4s ease;
+}
+#home-stack-section-1.reveal{
+  clip-path: circle(150% at center);
+}
 /* Preloader End */
 
 /* Navbar Start */
 .navbar{
-    /* background-color: #1e1e1e; */
     background-color: #111;
     padding: 1rem 5%;
 }

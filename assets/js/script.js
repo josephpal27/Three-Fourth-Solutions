@@ -91,17 +91,38 @@ document.addEventListener("DOMContentLoaded", () => {
 // ---------------------------------------------------------------------------------------------------------------
 
 // Functionality For Home Page Preloader
-document.addEventListener("DOMContentLoaded", function() {
+// document.addEventListener("DOMContentLoaded", function() {
+//   const preloader = document.getElementById("preloader");
+
+//   if (window.location.pathname === "/" || window.location.pathname.endsWith("index.html")) {
+//     window.addEventListener("load", function() {
+//       setTimeout(() => {
+//         preloader.classList.add("hide");
+//       }, 500); // slight delay for effect
+//     });
+//   } else {
+//     preloader.style.display = "none";
+//   }
+// });
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
   const preloader = document.getElementById("preloader");
+  const mainContent = document.getElementById("home-stack-section-1");
 
   if (window.location.pathname === "/" || window.location.pathname.endsWith("index.html")) {
-    window.addEventListener("load", function() {
+    window.addEventListener("load", function () {
       setTimeout(() => {
         preloader.classList.add("hide");
-      }, 100); // slight delay for effect
+        setTimeout(() => {
+          mainContent.classList.add("reveal");
+        }, 100); // matches preloader transition
+      }, 500);
     });
   } else {
     preloader.style.display = "none";
+    mainContent.classList.add("reveal");
   }
 });
 
