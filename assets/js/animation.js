@@ -286,7 +286,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // TFS Network Logos Heading
 document.addEventListener("DOMContentLoaded", () => {
-  let section = document.querySelector("#home-stack-section-6");
+  let section = document.querySelector(".tfs-network-logos");
   let networkHead = section.querySelector("h6");
   let networkpara = section.querySelector("p");
 
@@ -334,7 +334,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // Work Together Heading
 document.addEventListener("DOMContentLoaded", () => {
-  let section = document.querySelector("#home-stack-section-7");
+  let section = document.querySelector(".work-together");
   let head = section.querySelectorAll("p");
   let headtop = section.querySelector("span");
 

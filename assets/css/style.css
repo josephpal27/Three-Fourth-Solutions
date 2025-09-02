@@ -219,6 +219,8 @@ body {
     height: 42px;
     line-height: 42px;
     font-size: calc(0.75rem + 0.5vw);
+    border-top-right-radius: 11px;
+    border-bottom-left-radius: 11px;
   }
 }
 
@@ -237,6 +239,8 @@ body {
     height: 36px;
     line-height: 36px;
     font-size: calc(0.7rem + 0.5vw);
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
   }
 }
 /* Navbar End */

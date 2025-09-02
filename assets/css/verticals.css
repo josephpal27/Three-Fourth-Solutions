@@ -1,0 +1,9 @@
+#verticals-stack-section-1{
+    background-color: #111;
+}
+#verticals-stack-section-2{
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+    background-color: #222;
+    box-shadow: 0px -7px 10px 0px #fcba1340;
+}

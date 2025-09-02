@@ -3,7 +3,7 @@ const lenis = new Lenis({
   duration: 1.2, // smoothness speed
   easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // ease-out
   smoothWheel: true,
-  smoothTouch: false
+  smoothTouch: true, // if you want smooth scrolling on touch devices
 });
 
 // Use Lenis with GSAP's ScrollTrigger
