@@ -1,5 +1,23 @@
 /* Contact Us Start */
 .contact-us{
     padding: 5rem 5% 3rem 5%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.contact-left{
+    width: 50%;
+}
+.contact-left h1{
+    color: #fff;
+    font-size: calc(5.5rem + 0.5vw);
+    font-weight: 700;
+}
+.contact-left h1 span{
+    color: #fcb913;
+}
+
+.contact-right{
+    width: 45%;
 }
 /* Contact Us End */
