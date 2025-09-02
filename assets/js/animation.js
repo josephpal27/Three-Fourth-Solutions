@@ -300,7 +300,7 @@ document.addEventListener("DOMContentLoaded", () => {
         ease: "power2.out",
         scrollTrigger: {
           trigger: networkHead,
-          start: "top 80%",
+          start: "top 85%",
           end: "top 10%",
           scrub: 5,
           scroller: document.body,
@@ -320,7 +320,7 @@ document.addEventListener("DOMContentLoaded", () => {
         ease: "power2.out",
         scrollTrigger: {
           trigger: networkHead,
-          start: "top 80%",
+          start: "top 85%",
           end: "top 10%",
           scrub: 4,
           scroller: document.body,
