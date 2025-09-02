@@ -565,10 +565,12 @@ body {
   width: 100%;
   margin-top: 4rem;
   padding-bottom: 2rem;
+  padding-right: 5px;
 }
 .hall-of-fame .award-box {
   text-align: center;
   padding: 0.5rem 1.7rem;
+  border-left: 1px solid #535353;
 }
 .hall-of-fame .award-box img{
   width: 100%;

@@ -229,4 +229,153 @@ document.addEventListener("DOMContentLoaded", () => {
 
 });
 
+
+// The Hall Of Fame Heading
+document.addEventListener("DOMContentLoaded", () => {
+  let section = document.querySelector("#home-stack-section-5");
+  let awardsHead = section.querySelector("h5");
+
+  if (awardsHead) {
+    gsap.fromTo(
+      awardsHead,
+      { opacity: 0, y: -60 }, // start above
+      {
+        opacity: 1,
+        y: 0, // settle into place
+        ease: "power2.out",
+        scrollTrigger: {
+          trigger: awardsHead,
+          start: "top 80%",
+          end: "top 10%",
+          scrub: 5,
+          scroller: document.body,
+          markers: false,
+        },
+      }
+    );
+  }
+});
+
+
+// The Hall Of Fame Awards
+document.addEventListener("DOMContentLoaded", () => {
+  let section = document.querySelector("#home-stack-section-5");
+  let awards = section.querySelectorAll("img");
+
+  if (awards.length) {
+    gsap.fromTo(
+      awards,
+      { y: '-100%', opacity: 0 },
+      {
+        y: 0,
+        opacity: 1,
+        ease: "power2.in",
+        duration: 0.7, 
+        stagger: 0, 
+        scrollTrigger: {
+          trigger: section,
+          start: "top 80%",
+          toggleActions: "restart reset restart reset",
+          markers: false,
+        }
+      }
+    );
+  }
+});
+
+
+// TFS Network Logos Heading
+document.addEventListener("DOMContentLoaded", () => {
+  let section = document.querySelector("#home-stack-section-6");
+  let networkHead = section.querySelector("h6");
+  let networkpara = section.querySelector("p");
+
+  if (networkHead) {
+    gsap.fromTo(
+      networkHead,
+      { opacity: 0, y: 70 }, // start above
+      {
+        opacity: 1,
+        y: 0, // settle into place
+        ease: "power2.out",
+        scrollTrigger: {
+          trigger: networkHead,
+          start: "top 80%",
+          end: "top 10%",
+          scrub: 5,
+          scroller: document.body,
+          markers: false,
+        },
+      }
+    );
+  }
+
+  if (networkpara) {
+    gsap.fromTo(
+      networkpara,
+      { opacity: 0, y: 50 }, // start above
+      {
+        opacity: 1,
+        y: 0, // settle into place
+        ease: "power2.out",
+        scrollTrigger: {
+          trigger: networkHead,
+          start: "top 80%",
+          end: "top 10%",
+          scrub: 4,
+          scroller: document.body,
+          markers: false,
+        },
+      }
+    );
+  }
+});
+
+
+// Work Together Heading
+document.addEventListener("DOMContentLoaded", () => {
+  let section = document.querySelector("#home-stack-section-7");
+  let head = section.querySelectorAll("p");
+  let headtop = section.querySelector("span");
+
+  if (head) {
+    gsap.fromTo(
+      head,
+      { rotateX: '90%' }, // start above
+      {
+        rotateX: 0,
+        y: 0, // settle into place
+        ease: "power2.out",
+        scrollTrigger: {
+          trigger: head,
+          start: "top 80%",
+          end: "top 10%",
+          scrub: 5,
+          scroller: document.body,
+          markers: false,
+        },
+      }
+    );
+  }
+  if (headtop) {
+    gsap.fromTo(
+      headtop,
+      { rotateX: '90%' }, // start above
+      {
+        rotateX: 0,
+        y: 0, // settle into place
+        ease: "power2.out",
+        scrollTrigger: {
+          trigger: headtop,
+          start: "top 80%",
+          end: "top 10%",
+          scrub: 5,
+          scroller: document.body,
+          markers: false,
+        },
+      }
+    );
+  }
+});
+
 // ----------------------------------------------------------------------------------------------------------
