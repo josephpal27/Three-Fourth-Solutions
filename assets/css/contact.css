@@ -101,19 +101,120 @@
     margin-bottom: 1rem;
 }
 .contact-form form button{
-    background-color: transparent;
-    border: 2px solid #282828;
-    color: #fff;
-    font-size: calc(0.8rem + 0.5vw);
+    background-color: #fff;
+    border: none;
+    color: #000;
+    font-size: calc(0.85rem + 0.5vw);
     font-weight: 500;
-    padding: 1.1rem 2.7rem;
+    padding: 1.2rem 2.8rem;
     border-top-right-radius: 35px;
     border-bottom-left-radius: 35px;
     transition: all 0.2s ease;
 }
 .contact-form form button:hover{
     background-color: #fcb913;
-    border: 2px solid #fcb913;
+    color: #fff;
+}
+
+/* Media Queries */
+@media screen and (min-width: 1230px) and (max-width: 1399px){
+    .contact-us{
+        padding: 4.5rem 5% 10rem 5%;
+    }
+    .contact-left h1{
+        font-size: calc(5rem + 0.5vw);
+    }
+    .contact-left p{
+        font-size: calc(2.25rem + 0.5vw);
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        line-height: 1.2;
+    }
+    .contact-left a{
+        font-size: calc(1.1rem + 0.5vw);
+        margin-bottom: 1.5rem;
+    }
+
+    .contact-right .map-box{
+        height: 21.7rem;
+    }
+    .contact-form form{
+        margin-top: 3rem;
+    }
+    .contact-form form input,
+    .contact-form form textarea{
+        padding: 0.8rem;
+        margin-bottom: 0.5rem;
+    }
+    .contact-form form input,
+    .contact-form form textarea,
+    .contact-form form input::placeholder,
+    .contact-form form textarea::placeholder{
+        font-size: calc(0.95rem + 0.5vw);
+    }
+    .contact-form form textarea{
+        padding: 0.8rem 0.8rem 0 0.8rem;
+        margin-bottom: 1rem;
+    }
+    .contact-form form button{
+        font-size: calc(0.78rem + 0.5vw);
+        padding: 1.1rem 2.7rem;
+        border-top-right-radius: 32px;
+        border-bottom-left-radius: 32px;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1229px){
+    .contact-us{
+        padding: 4rem 5% 9rem 5%;
+    }
+    .contact-left h1{
+        font-size: calc(4.2rem + 0.5vw);
+    }
+    .contact-left p{
+        font-size: calc(1.9rem + 0.5vw);
+        margin-top: 2.7rem;
+        margin-bottom: 2.8rem;
+        line-height: 1.1;
+    }
+    .contact-left a{
+        font-size: calc(1rem + 0.5vw);
+        margin-bottom: 1.3rem;
+    }
+
+    .contact-right .map-box{
+        height: 18.1rem;
+    }
+    .contact-form form{
+        margin-top: 2.7rem;
+    }
+    .contact-form form input,
+    .contact-form form textarea{
+        padding: 0.7rem;
+        margin-bottom: 0.5rem;
+        border-bottom: 1.7px solid #282828;
+    }
+    .contact-form form input:focus,
+    .contact-form form textarea:focus{
+        border-bottom: 1.7px solid #3b3b3b;
+    }
+    .contact-form form input,
+    .contact-form form textarea,
+    .contact-form form input::placeholder,
+    .contact-form form textarea::placeholder{
+        font-size: calc(0.9rem + 0.5vw);
+    }
+    .contact-form form textarea{
+        max-height: 10rem;
+        padding: 0.7rem 0.7rem 0 0.7rem;
+        margin-bottom: 1rem;
+    }
+    .contact-form form button{
+        font-size: calc(0.75rem + 0.5vw);
+        padding: 0.95rem 2.6rem;
+        border-top-right-radius: 30px;
+        border-bottom-left-radius: 30px;
+    }
 }
 /* Contact Us End */
 
