@@ -422,3 +422,22 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // ----------------------------------------------------------------------------------------------------------
+
+// Contact Page Animations
+
+// Contact Us Section Heading
+// gsap.to("#contact-stack-section-1 .contact-left h1 span", {
+//     opacity: 1,
+//     duration: 1,
+//     stagger: 0.3, // delay between words
+//     ease: "power3.out",
+// });
+
+// Contact Us Section Sub Heading
+// gsap.to("#contact-stack-section-1 .contact-left p", {
+//     opacity: 1,
+//     duration: 1.5,
+//     ease: "power3.out",
+// });
+
+// ----------------------------------------------------------------------------------------------------------
