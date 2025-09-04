@@ -432,36 +432,19 @@ document.addEventListener("DOMContentLoaded", () => {
 // Verticals Page Animations
 
 // TFS Network Logos Heading in "Verticals Page"
-document.addEventListener("DOMContentLoaded", () => {
-  let section = document.querySelector("#verticals-stack-section-1 .tfs-network-logos");
-  let networkHead = section.querySelector("h1");
-  let networkpara = section.querySelector("p");
+gsap.to("#verticals-stack-section-1 .tfs-network-logos h1", {
+    y: 0,
+    opacity: 1,
+    duration: 1,
+    stagger: 0.3, // delay between words
+    ease: "power3.out",
+});
 
-  if (networkHead) {
-    gsap.fromTo(
-      networkHead,
-      { opacity: 0, y: 70 }, // start above
-      {
-        opacity: 1,
-        y: 0, // settle into place
-        ease: "power2.out",
-        duration: 1.5,
-      }
-    );
-  }
-
-  if (networkpara) {
-    gsap.fromTo(
-      networkpara,
-      { opacity: 0, y: 50 }, // start above
-      {
-        opacity: 1,
-        y: 0, // settle into place
-        ease: "power2.out",
-        duration: 1.5,
-      }
-    );
-  }
+gsap.to("#verticals-stack-section-1 .tfs-network-logos p", {
+    y: 0,
+    opacity: 1,
+    duration: 1.5,
+    ease: "power3.out",
 });
 
 // ----------------------------------------------------------------------------------------------------------

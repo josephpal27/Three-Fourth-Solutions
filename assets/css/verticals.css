@@ -7,3 +7,14 @@
     background-color: #222;
     box-shadow: 0px -7px 10px 0px #fcba1340;
 }
+
+/* TFS Network Logos Start */
+.tfs-network-logos h1{
+  transform: translateY(70px);
+  opacity: 0;
+}
+.tfs-network-logos p{
+  transform: translateY(50px);
+  opacity: 0;
+}
+/* TFS Network Logos End */
