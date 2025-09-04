@@ -468,7 +468,7 @@ body {
 .meet-the-team-row-head p{
   color: #fff;
   font-size: calc(2rem + 0.5vw);
-  font-weight: 500;
+  font-weight: 550;
   width: max-content;
   transition: color 0.3s ease;
 }
@@ -751,7 +751,7 @@ body {
 .tfs-network-logos p{
   color: #fff;
   font-size: calc(2rem + 0.5vw);
-  font-weight: 500;
+  font-weight: 550;
   width: max-content;
   transition: color 0.3s ease;
 }
@@ -774,7 +774,6 @@ body {
 }
 .network-logo-row .network-logo-box:hover{
   background-color: #1b1b1b;
-  box-shadow: 0 0 10px #ffcd4f84;
   box-shadow: #fdb71558 0px 3px 6px, #fdb71558 0px 3px 6px;
 }
 .network-logo-row .network-logo-box img{

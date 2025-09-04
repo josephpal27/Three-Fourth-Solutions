@@ -138,6 +138,16 @@ VanillaTilt.init(document.querySelectorAll(".trusted-by-card-row .trust-card"), 
 
 // ---------------------------------------------------------------------------------------------------------------
 
+// Functionality For Press & Media Page Spotlight Media Cards Hover Effect
+VanillaTilt.init(document.querySelectorAll(".spotlight .media-row .media-box"), {
+    max: 15,
+    speed: 400,
+    glare: true,
+    "max-glare": 0.2
+});
+
+// ---------------------------------------------------------------------------------------------------------------
+
 // Functionality For Home Page Awards Slider
  const awardsSwiper = new Swiper(".awards-slider", {
   slidesPerView: 4,

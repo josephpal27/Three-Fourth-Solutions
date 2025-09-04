@@ -255,6 +255,7 @@ document.addEventListener("DOMContentLoaded", () => {
           end: "top 10%",
           scrub: 5,
           scroller: document.body,
+          once: true, // ensures it won't run again
           markers: false,
         },
       }

@@ -1,0 +1,123 @@
+#media-stack-section-1{
+    background-color: #111;
+}
+#media-stack-section-2{
+    background-color: #222;
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+    box-shadow: 0px -7px 10px 0px #fcba1340;
+}
+#media-stack-section-3{
+    background-color: #111;
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+    box-shadow: 0px -7px 10px 0px #fcba1340;
+}
+
+/* Spotlight Start */
+.spotlight{
+    padding: 5rem 5% 8rem 5%;
+}
+.spotlight h1{
+    color: #fff;
+    font-size: calc(5.5rem + 0.5vw);
+    font-weight: 700;
+}
+.spotlight h1 span{
+    color: #fcb913;
+}
+.spotlight p{
+    color: #fff;
+    font-size: calc(2rem + 0.5vw);
+    font-weight: 550;
+    margin-top: 1rem;
+    width: max-content;
+    transition: color 0.3s ease;
+}
+.spotlight p:hover{
+    color: #fcb913;
+}
+
+.media-row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 4rem;
+}
+.media-row .media-box{
+    width: 32%;
+    border-radius: 20px;
+    margin-bottom: 1.8rem;
+    overflow: hidden;
+    box-shadow: rgba(187, 187, 187, 0.266) 0px 5px 12px 0px;
+    transition: box-shadow 0.3s ease;
+}
+.media-row .media-box:hover{
+    box-shadow: #fdb71558 0px 5px 8px, #fdb71558 0px 5px 8px;
+}
+.media-row .media-box img{
+    width: 100%;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+}
+.media-row .media-box img:hover{
+    filter: grayscale(0);
+}
+
+/* Media Queries */
+@media screen and (min-width: 1230px) and (max-width: 1399px){
+    .spotlight{
+        padding: 4.5rem 5% 7rem 5%;
+    }
+    .spotlight h1{
+        font-size: calc(5rem + 0.5vw);
+    }
+    .spotlight p{
+        font-size: calc(1.85rem + 0.5vw);
+        margin-top: 0.8rem;
+    }
+    .media-row{
+        margin-top: 3.5rem;
+    }
+    .media-row .media-box{
+        margin-bottom: 1.7rem;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1229px){
+    .spotlight{
+        padding: 4rem 5% 7rem 5%;
+    }
+    .spotlight h1{
+        font-size: calc(4.5rem + 0.5vw);
+    }
+    .spotlight p{
+        font-size: calc(1.65rem + 0.5vw);
+        margin-top: 0.8rem;
+    }
+    .media-row{
+        margin-top: 3.2rem;
+    }
+    .media-row .media-box{
+        margin-bottom: 1.5rem;
+    }
+}
+/* Spotlight End */
+
+/* TFS Network Logos Start */
+.network-logo-row .network-logo-box{
+  background-color: #161616;
+}
+.network-logo-row .network-logo-box:hover{
+  background-color: #191919;
+}
+/* TFS Network Logos End */
+
+/* Footer Start */
+footer{
+  background-color: #222;
+}
+footer .social-btns a{
+  background-color: #333333;
+}
+/* Footer End */
