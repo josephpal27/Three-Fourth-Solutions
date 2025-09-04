@@ -435,7 +435,7 @@ document.addEventListener("DOMContentLoaded", () => {
 gsap.to("#verticals-stack-section-1 .tfs-network-logos h1", {
     y: 0,
     opacity: 1,
-    duration: 1,
+    duration: 1.5,
     stagger: 0.3, // delay between words
     ease: "power3.out",
 });
@@ -443,7 +443,7 @@ gsap.to("#verticals-stack-section-1 .tfs-network-logos h1", {
 gsap.to("#verticals-stack-section-1 .tfs-network-logos p", {
     y: 0,
     opacity: 1,
-    duration: 1.5,
+    duration: 2,
     ease: "power3.out",
 });
 
