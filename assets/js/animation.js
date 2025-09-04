@@ -295,9 +295,9 @@ document.addEventListener("DOMContentLoaded", () => {
 document.addEventListener("DOMContentLoaded", () => {
   let section = document.querySelector(".tfs-network-logos");
   let networkHead = section.querySelector("h6");
-  let networkHead2 = section.querySelector("h1");
+  let networkHead2 = section.querySelector("h2");  // Added for media page
   let networkpara = section.querySelector("p");
-  let networkparaOnMediaPage = section.querySelector("#media-network-para");
+  let networkparaOnMediaPage = section.querySelector("#media-network-para");  // Added for media page
 
   if (networkHead) {
     gsap.fromTo(
@@ -319,7 +319,7 @@ document.addEventListener("DOMContentLoaded", () => {
     );
   }
 
-  if (networkHead2) {
+  if (networkHead2) {  // Added for media page
     gsap.fromTo(
       networkHead2,
       { opacity: 0, y: 70 }, // start above
@@ -359,7 +359,7 @@ document.addEventListener("DOMContentLoaded", () => {
     );
   }
 
-  if (networkparaOnMediaPage) {
+  if (networkparaOnMediaPage) {  // Added for media page
     gsap.fromTo(
       networkparaOnMediaPage,
       { opacity: 0, y: 50 }, // start above

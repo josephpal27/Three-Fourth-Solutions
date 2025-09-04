@@ -739,13 +739,15 @@ body {
   padding: 4rem 5% 7.5rem 5%;
 }
 .tfs-network-logos h6,
-.tfs-network-logos h1{
+.tfs-network-logos h1,
+.tfs-network-logos h2{
   color: #fff;
   font-size: calc(5.5rem + 0.5vw);
   font-weight: 700;
 }
 .tfs-network-logos h6 span,
-.tfs-network-logos h1 span{
+.tfs-network-logos h1 span,
+.tfs-network-logos h2 span{
   color: #fcb913;
 }
 .tfs-network-logos p{
@@ -809,7 +811,8 @@ body {
     padding: 3.5rem 5% 7rem 5%;
   }
   .tfs-network-logos h6,
-  .tfs-network-logos h1{
+  .tfs-network-logos h1,
+  .tfs-network-logos h2{
     font-size: calc(5rem + 0.5vw);
   }
   .tfs-network-logos p{
@@ -833,7 +836,8 @@ body {
     padding: 3.5rem 5% 6rem 5%;
   }
   .tfs-network-logos h6,
-  .tfs-network-logos h1{
+  .tfs-network-logos h1,
+  .tfs-network-logos h2{
     font-size: calc(4.5rem + 0.5vw);
   }
   .tfs-network-logos p{
