@@ -498,3 +498,25 @@ gsap.to("#media-stack-section-1 .spotlight .media-row .media-box", {
 });
 
 // ----------------------------------------------------------------------------------------------------------
+
+// Public Relations Page Animations
+
+// Public Relations Banner Heading
+gsap.to(".verticals-internal-banner .banner-left h1", {
+    y: 0,
+    opacity: 1,
+    duration: 1.5,
+    scrub: 5,
+    ease: "power3.out",
+});
+
+// Public Relations Banner Para
+gsap.to(".verticals-internal-banner .banner-left p", {
+    opacity: 1,
+    duration: 1.5,
+    scrub: 5,
+    stagger: 0.3,
+    ease: "power3.out",
+});
+
+// ----------------------------------------------------------------------------------------------------------
