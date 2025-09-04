@@ -295,7 +295,9 @@ document.addEventListener("DOMContentLoaded", () => {
 document.addEventListener("DOMContentLoaded", () => {
   let section = document.querySelector(".tfs-network-logos");
   let networkHead = section.querySelector("h6");
+  let networkHead2 = section.querySelector("h1");
   let networkpara = section.querySelector("p");
+  let networkparaOnMediaPage = section.querySelector("#media-network-para");
 
   if (networkHead) {
     gsap.fromTo(
@@ -317,6 +319,26 @@ document.addEventListener("DOMContentLoaded", () => {
     );
   }
 
+  if (networkHead2) {
+    gsap.fromTo(
+      networkHead2,
+      { opacity: 0, y: 70 }, // start above
+      {
+        opacity: 1,
+        y: 0, // settle into place
+        ease: "power2.out",
+        scrollTrigger: {
+          trigger: networkHead2,
+          start: "top 85%",
+          end: "top 10%",
+          scrub: 5,
+          scroller: document.body,
+          markers: false,
+        },
+      }
+    );
+  }
+
   if (networkpara) {
     gsap.fromTo(
       networkpara,
@@ -327,6 +349,26 @@ document.addEventListener("DOMContentLoaded", () => {
         ease: "power2.out",
         scrollTrigger: {
           trigger: networkHead,
+          start: "top 85%",
+          end: "top 10%",
+          scrub: 4,
+          scroller: document.body,
+          markers: false,
+        },
+      }
+    );
+  }
+
+  if (networkparaOnMediaPage) {
+    gsap.fromTo(
+      networkparaOnMediaPage,
+      { opacity: 0, y: 50 }, // start above
+      {
+        opacity: 1,
+        y: 0, // settle into place
+        ease: "power2.out",
+        scrollTrigger: {
+          trigger: networkparaOnMediaPage,
           start: "top 85%",
           end: "top 10%",
           scrub: 4,
@@ -438,6 +480,37 @@ gsap.to("#contact-stack-section-1 .contact-left h1 span", {
 gsap.to("#contact-stack-section-1 .contact-left p", {
     opacity: 1,
     duration: 1.5,
+    ease: "power3.out",
+});
+
+// ----------------------------------------------------------------------------------------------------------
+
+// Press & Media Page Animations
+
+// Press & Media Heading
+gsap.to("#media-stack-section-1 .spotlight h1", {
+    y: 0,
+    opacity: 1,
+    duration: 1.5,
+    scrub: 5,
+    ease: "power3.out",
+});
+
+// Press & Media Sub Heading
+gsap.to("#media-stack-section-1 .spotlight p", {
+    y: 0,
+    opacity: 1,
+    duration: 2.5,
+    scrub: 5,
+    ease: "power3.out",
+});
+
+// Press & Media Row Media Cards 
+gsap.to("#media-stack-section-1 .spotlight .media-row .media-box", {
+    opacity: 1,
+    duration: 3,
+    stagger: 0.25, // delay between cards
+    scrub: 5,
     ease: "power3.out",
 });
 
