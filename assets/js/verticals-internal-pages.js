@@ -1,6 +1,5 @@
 
 // Functionality for Domain Expertise Cards
-
 let mm = gsap.matchMedia();
 
 mm.add(
@@ -46,4 +45,37 @@ mm.add(
   }
 );
 
-// --------------------------------------------------------------------------------------------------------
+// ---------------------------------------------------------------------------------------------------------------
+
+// Functionality For Home Page Awards Slider
+ const prMediaSwiper = new Swiper(".media-cards-slider", {
+  slidesPerView: 3,
+  loop: true,
+  speed: 800,
+  spaceBetween: 25,
+  autoplay: {
+    delay: 2000,
+    disableOnInteraction: false
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true
+  },
+  breakpoints: {
+    992: { slidesPerView: 3 },
+    768: { slidesPerView: 3 },
+    480: { slidesPerView: 2 },
+    0: { slidesPerView: 1 }
+  }
+});
+
+// Make sure autoplay starts even if something interrupted it
+prMediaSwiper.autoplay.start();
+
+// Restart autoplay after ScrollTrigger refresh
+ScrollTrigger.addEventListener("refresh", () => {
+  prMediaSwiper.update();
+  prMediaSwiper.autoplay.start();
+});
+
+// ---------------------------------------------------------------------------------------------------------------

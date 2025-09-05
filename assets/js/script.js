@@ -105,8 +105,6 @@ document.addEventListener("DOMContentLoaded", () => {
 //   }
 // });
 
-
-
 document.addEventListener("DOMContentLoaded", function () {
   const preloader = document.getElementById("preloader");
   const mainContent = document.getElementById("home-stack-section-1");

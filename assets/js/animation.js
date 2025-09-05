@@ -536,6 +536,7 @@ document.addEventListener("DOMContentLoaded", () => {
           trigger: domainHead,
           start: "top 85%",
           end: "top 10%",
+          // toggleActions: "play reverse play reverse",
           scrub: 5,
           scroller: document.body,
           markers: false,
@@ -617,6 +618,32 @@ document.addEventListener("DOMContentLoaded", () => {
           start: "top 75%",
           end: "top 10%",
           scrub: 7,
+          scroller: document.body,
+          markers: false,
+        },
+      }
+    );
+  }
+});
+
+// PR Media Relations Heading
+document.addEventListener("DOMContentLoaded", () => {
+  let section = document.querySelector(".pr-media");
+  let prMediaHead = section.querySelector("h4");
+
+  if (prMediaHead) {
+    gsap.fromTo(
+      prMediaHead,
+      { opacity: 0, y: 70 }, // start above
+      {
+        opacity: 1,
+        y: 0, // settle into place
+        ease: "power2.out",
+        scrollTrigger: {
+          trigger: prMediaHead,
+          start: "top 85%",
+          end: "top 20%",
+          scrub: 5,
           scroller: document.body,
           markers: false,
         },

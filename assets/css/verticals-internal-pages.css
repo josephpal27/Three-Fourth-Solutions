@@ -12,11 +12,28 @@
     box-shadow: 0px -7px 10px 0px #fcba1340;
     min-height: 106vh;
 }
-
 #pr-stack-section-3{
     border-top-left-radius: 60px;
     border-top-right-radius: 60px;
     background-color: #222;
+    box-shadow: 0px -7px 10px 0px #fcba1340;
+}
+#pr-stack-section-4{
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+    background-color: #111;
+    box-shadow: 0px -7px 10px 0px #fcba1340;
+}
+#pr-stack-section-5{
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+    background-color: #222;
+    box-shadow: 0px -7px 10px 0px #fcba1340;
+}
+#pr-stack-section-6{
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+    background-color: #111;
     box-shadow: 0px -7px 10px 0px #fcba1340;
 }
 /* Stacking Sections End */
@@ -313,6 +330,117 @@
     }
 }
 /* Influencer Outreach End */
+
+/* PR Media Relations Start */
+.pr-media{
+    padding: 4rem 5% 8rem 5%;
+}
+.pr-media h4{
+    color: #fff;
+    font-size: calc(5.5rem + 0.5vw);
+    font-weight: 700;
+}
+.pr-media h4 span{
+    color: #fcb913;
+}
+.pr-media .media-cards-slider{
+    margin-top: 4rem;
+    padding-bottom: 4.5rem;
+}
+.pr-media .media-cards-slider .media-box{
+    overflow: hidden;
+    border-radius: 20px;
+}
+.pr-media .media-cards-slider .media-box img{
+    width: 100%;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+}
+.pr-media .media-cards-slider .media-box img:hover{
+    filter: grayscale(0);
+}
+.pr-media .media-cards-slider .swiper-pagination{
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.pr-media .media-cards-slider .swiper-pagination-bullet{
+    width: 15px;
+    height: 15px;
+    background: #666;
+    opacity: 1;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+.pr-media .media-cards-slider .swiper-pagination-bullet:hover{
+    background: #535353;
+}
+.pr-media .media-cards-slider .swiper-pagination-bullet-active{
+    background: #fcb913 !important;
+}
+
+/* Media Queries */
+@media screen and (min-width: 1230px) and (max-width: 1399px){
+    .pr-media{
+        padding: 4rem 5% 7.5rem 5%;
+    }
+    .pr-media h4{
+        font-size: calc(5rem + 0.5vw);
+    }
+    .pr-media .media-cards-slider{
+        margin-top: 3.5rem;
+        padding-bottom: 4rem;
+    }
+    .pr-media .media-cards-slider .swiper-pagination-bullet{
+        width: 14px;
+        height: 14px;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1229px){
+    .pr-media{
+        padding: 3.5rem 5% 7rem 5%;
+    }
+    .pr-media h4{
+        font-size: calc(4.5rem + 0.5vw);
+    }
+    .pr-media .media-cards-slider{
+        margin-top: 3rem;
+        padding-bottom: 3.5rem;
+    }
+    .pr-media .media-cards-slider .media-box{
+        border-radius: 17px;
+    }
+    .pr-media .media-cards-slider .swiper-pagination{
+        gap: 3px;
+    }
+    .pr-media .media-cards-slider .swiper-pagination-bullet{
+        width: 13px;
+        height: 13px;
+    }
+}
+/* PR Media Relations End */
+
+/* TFS Network Logos Start */
+.network-logo-row .network-logo-box{
+  background-color: #161616;
+}
+.network-logo-row .network-logo-box:hover{
+  background-color: #191919;
+}
+/* TFS Network Logos End */
+
+/* Footer Start */
+footer{
+  background-color: #222;
+}
+footer .social-btns a{
+  background-color: #333333;
+}
+/* Footer End */
 
 /* Public Relations Page Styles End */
 
