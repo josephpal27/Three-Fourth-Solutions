@@ -519,4 +519,58 @@ gsap.to(".verticals-internal-banner .banner-left p", {
     ease: "power3.out",
 });
 
+// Domain Expertise Heading
+document.addEventListener("DOMContentLoaded", () => {
+  let section = document.querySelector(".domain-expertise");
+  let domainHead = section.querySelector("h2");
+
+  if (domainHead) {
+    gsap.fromTo(
+      domainHead,
+      { opacity: 0, y: -60 }, // start above
+      {
+        opacity: 1,
+        y: 0, // settle into place
+        ease: "power2.out",
+        scrollTrigger: {
+          trigger: domainHead,
+          start: "top 85%",
+          end: "top 10%",
+          scrub: 5,
+          scroller: document.body,
+          markers: false,
+        },
+      }
+    );
+  }
+});
+
+// Domain Expertise Cards
+document.addEventListener("DOMContentLoaded", () => {
+  let section = document.querySelector(".domain-expertise");
+  let domainCards = section.querySelectorAll(".expertise-card");
+
+  if (domainCards.length) {
+    gsap.fromTo(
+      domainCards,
+      { opacity: 0, y: 60 }, // start position
+      {
+        opacity: 1,
+        y: 0, // final position
+        ease: "power2.out",
+        stagger: 0.2,
+        scrollTrigger: {
+          trigger: section,
+          start: "top 75%",
+          end: "top 10%",
+          scrub: 7,
+          scroller: document.body,
+          markers: false,
+        },
+      }
+    );
+  }
+});
+
+
 // ----------------------------------------------------------------------------------------------------------

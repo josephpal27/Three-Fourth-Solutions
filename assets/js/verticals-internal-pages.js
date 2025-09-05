@@ -1,0 +1,49 @@
+
+// Functionality for Domain Expertise Cards
+
+let mm = gsap.matchMedia();
+
+mm.add(
+  {
+    isMobile: "(max-width: 767px)",
+    isDesktop: "(min-width: 768px)",
+  },
+  (context) => {
+    let { isMobile, isDesktop } = context.conditions;
+
+    document
+      .querySelectorAll(".domain-expertise-card-row .expertise-card")
+      .forEach((card) => {
+        const overlay = card.querySelector(".overlay");
+        const icon = card.querySelector(".icon");
+        const heading = card.querySelector("span");
+        const para = card.querySelector("p");
+        const img = card.querySelector(".card-img");
+
+        let tl = gsap.timeline({ paused: true });
+
+        tl.to(overlay, { opacity: 0.7, duration: 0.5, ease: "power3.out" }, 0)
+          .to(icon, { opacity: 0, duration: 0.5, ease: "power3.inOut" }, 0)
+          .to(
+            heading,
+            { y: isMobile ? -40 : -70, duration: 0.4, ease: "power1.inOut" },
+            0
+          )
+          .to(
+            para,
+            {
+              opacity: 1,
+              y: isMobile ? -30 : -60,
+              duration: 0.5,
+              ease: "power1.out",
+            },
+            "-=0.2"
+          );
+
+        card.addEventListener("mouseenter", () => tl.play());
+        card.addEventListener("mouseleave", () => tl.reverse());
+      });
+  }
+);
+
+// --------------------------------------------------------------------------------------------------------

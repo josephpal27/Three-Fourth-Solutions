@@ -10,6 +10,7 @@
     border-top-right-radius: 60px;
     background-color: #111;
     box-shadow: 0px -7px 10px 0px #fcba1340;
+    min-height: 106vh;
 }
 /* Stacking Sections End */
 
@@ -114,6 +115,132 @@
     }
 }
 /* Verticals Internal Banner End */
+
+/* Domain Expertise Start */
+.domain-expertise{
+    padding: 4rem 5% 3rem 5%;
+}
+.domain-expertise h2{
+    color: #fff;
+    font-size: calc(5.5rem + 0.5vw);
+    font-weight: 700;
+}
+.domain-expertise h2 span{
+    color: #fcb913;
+}
+.domain-expertise-card-row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 5rem;
+}
+.domain-expertise-card-row .expertise-card{
+    width: 31%;
+    border-radius: 15px;
+    position: relative;
+    color: #fff;
+    overflow: hidden;
+    box-shadow: rgba(187, 187, 187, 0.266) 0px 5px 12px 0px;
+    border: 2px solid #333333;
+    transition: box-shadow 0.3s ease-in-out;
+}
+.domain-expertise-card-row .expertise-card:hover{
+    box-shadow: rgba(187, 187, 187, 0.478) 0px 5px 12px 0px;
+}
+.expertise-card img{
+    width: 100%;
+}
+.expertise-card .overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    inset: 0;
+    background: #1e1e1e;
+    z-index: 1;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.expertise-card .overlay:hover{
+    background: #000;
+}
+.expertise-card h3,
+.expertise-card p,
+.expertise-card .icon{
+    position: relative;
+    z-index: 2;
+}
+.expertise-card span{
+    display: block;
+    margin: 1rem 0;
+    font-size: calc(1.5rem + 0.5vw);
+    font-weight: 600;
+}
+.expertise-card p{
+    opacity: 0;
+    font-size: calc(0.7rem + 0.5vw);
+    font-weight: 500;
+}
+.expertise-card .icon{
+    font-size: calc(2.5rem + 0.5vw);
+    color: #fbbf24;
+    margin-top: 5rem;
+}
+
+/* Media Queries */
+@media screen and (min-width: 1230px) and (max-width: 1399px){
+    .domain-expertise{
+        padding: 4rem 5% 3rem 5%;
+    }
+    .domain-expertise h2{
+        font-size: calc(5rem + 0.5vw);
+    }
+    .domain-expertise-card-row{
+        margin-top: 4.7rem;
+    }
+    .expertise-card span{
+        margin: 0.8rem 0;
+        font-size: calc(1.4rem + 0.5vw);
+    }
+    .expertise-card p{
+        font-size: calc(0.65rem + 0.5vw);
+    }
+    .expertise-card .icon{
+        font-size: calc(2.3rem + 0.5vw);
+        margin-top: 4.8rem;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1229px){
+    .domain-expertise{
+        padding: 3.5rem 5% 3rem 5%;
+    }
+    .domain-expertise h2{
+        font-size: calc(4.5rem + 0.5vw);
+    }
+    .domain-expertise-card-row{
+        margin-top: 4.4rem;
+    }
+    .domain-expertise-card-row .expertise-card{
+        border: 1.5px solid #333333;
+    }
+    .expertise-card span{
+        margin: 0.7rem 0;
+        font-size: calc(1.2rem + 0.5vw);
+    }
+    .expertise-card p{
+        font-size: calc(0.6rem + 0.5vw);
+    }
+    .expertise-card .icon{
+        font-size: calc(2rem + 0.5vw);
+        margin-top: 4.5rem;
+    }
+}
+/* Domain Expertise End */
 
 /* Public Relations Page Styles End */
 
