@@ -151,6 +151,7 @@ VanillaTilt.init(document.querySelectorAll(".spotlight .media-row .media-box"), 
   slidesPerView: 4,
   loop: true,
   speed: 600,
+  grabCursor: true,
   autoplay: {
     delay: 2000,
     disableOnInteraction: false
