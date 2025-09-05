@@ -536,9 +536,9 @@ document.addEventListener("DOMContentLoaded", () => {
           trigger: domainHead,
           start: "top 85%",
           end: "top 10%",
-          // toggleActions: "play reverse play reverse",
           scrub: 5,
           scroller: document.body,
+          once: true, // ensures it won't run again
           markers: false,
         },
       }
@@ -566,6 +566,7 @@ document.addEventListener("DOMContentLoaded", () => {
           end: "top 10%",
           scrub: 5,
           scroller: document.body,
+          once: true, // ensures it won't run again
           markers: false,
         },
       }
@@ -592,6 +593,7 @@ document.addEventListener("DOMContentLoaded", () => {
           end: "top 20%",
           scrub: 5,
           scroller: document.body,
+          once: true, // ensures it won't run again
           markers: false,
         },
       }
@@ -619,6 +621,7 @@ document.addEventListener("DOMContentLoaded", () => {
           end: "top 10%",
           scrub: 7,
           scroller: document.body,
+          once: true, // ensures it won't run again
           markers: false,
         },
       }
@@ -645,6 +648,7 @@ document.addEventListener("DOMContentLoaded", () => {
           end: "top 20%",
           scrub: 5,
           scroller: document.body,
+          once: true, // ensures it won't run again
           markers: false,
         },
       }

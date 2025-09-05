@@ -53,6 +53,7 @@ mm.add(
   loop: true,
   speed: 800,
   spaceBetween: 25,
+   grabCursor: true,
   autoplay: {
     delay: 2000,
     disableOnInteraction: false
