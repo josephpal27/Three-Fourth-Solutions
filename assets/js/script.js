@@ -222,8 +222,15 @@ document.querySelectorAll('.hall-of-fame img').forEach(img => {
     ScrollTrigger.refresh();
   });
 });
+
 document.querySelectorAll('.tfs-network-logos img').forEach(img => {
   img.addEventListener('load', () => {
+    ScrollTrigger.refresh();
+  });
+});
+
+document.querySelectorAll('.influencer-outreach .influencer-vid-box video').forEach(vid => {
+  vid.addEventListener('loadedmetadata', () => {
     ScrollTrigger.refresh();
   });
 });

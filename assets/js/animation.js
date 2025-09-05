@@ -563,6 +563,59 @@ document.addEventListener("DOMContentLoaded", () => {
           trigger: section,
           start: "top 75%",
           end: "top 10%",
+          scrub: 5,
+          scroller: document.body,
+          markers: false,
+        },
+      }
+    );
+  }
+});
+
+// Influencer Outreach Heading
+document.addEventListener("DOMContentLoaded", () => {
+  let section = document.querySelector(".influencer-outreach");
+  let influencerHead = section.querySelector("h3");
+
+  if (influencerHead) {
+    gsap.fromTo(
+      influencerHead,
+      { opacity: 0, x: -70 }, // start above
+      {
+        opacity: 1,
+        x: 0, // settle into place
+        ease: "power2.out",
+        scrollTrigger: {
+          trigger: influencerHead,
+          start: "top 85%",
+          end: "top 20%",
+          scrub: 5,
+          scroller: document.body,
+          markers: false,
+        },
+      }
+    );
+  }
+});
+
+// Influencer Outreach Cards
+document.addEventListener("DOMContentLoaded", () => {
+  let section = document.querySelector(".influencer-outreach");
+  let influencerCards = section.querySelectorAll(".influencer-vid-box");
+
+  if (influencerCards.length) {
+    gsap.fromTo(
+      influencerCards,
+      { opacity: 0, y: 50 }, // start position
+      {
+        opacity: 1,
+        y: 0, // final position
+        ease: "power2.out",
+        stagger: 0.15,
+        scrollTrigger: {
+          trigger: section,
+          start: "top 75%",
+          end: "top 10%",
           scrub: 7,
           scroller: document.body,
           markers: false,
