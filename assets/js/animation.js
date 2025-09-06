@@ -657,3 +657,35 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // ----------------------------------------------------------------------------------------------------------
+
+// Studios Page Animations
+
+// Studios Page Domain Expertise Cards
+document.addEventListener("DOMContentLoaded", () => {
+  let section = document.querySelector(".studios-domain-expertise-row");
+  let studiosDomainCards = section.querySelectorAll(".studios-expertise-card");
+
+  if (studiosDomainCards.length) {
+    gsap.fromTo(
+      studiosDomainCards,
+      { opacity: 0, y: 60 }, // start position
+      {
+        opacity: 1,
+        y: 0, // final position
+        ease: "power2.out",
+        stagger: 0.17,
+        scrollTrigger: {
+          trigger: section,
+          start: "top 75%",
+          end: "top 25%",
+          scrub: 5,
+          scroller: document.body,
+          once: true, // ensures it won't run again
+          markers: false,
+        },
+      }
+    );
+  }
+});
+
+// ----------------------------------------------------------------------------------------------------------
