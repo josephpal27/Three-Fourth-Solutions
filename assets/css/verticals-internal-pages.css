@@ -533,12 +533,42 @@ footer .social-btns a{
 .studios-domain-expertise-row .studios-expertise-card span{
     color: #fff;
     display: block;
-    margin-top: 1rem;
     font-size: calc(1.5rem + 0.5vw);
     font-weight: 600;
     text-align: center;
     line-height: 1.3;
     margin-top: 2rem;
+}
+
+/* Media Queries */
+@media screen and (min-width: 1230px) and (max-width: 1399px){
+    .studios-domain-expertise-row{
+        margin-top: 4.5rem;
+    }
+    .studios-domain-expertise-row .studios-expertise-card{
+        padding: 3.5rem 1.5rem;
+    }
+    .studios-domain-expertise-row .studios-expertise-card span{
+        font-size: calc(1.35rem + 0.5vw);
+        margin-top: 1.7rem;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1229px){
+    .studios-domain-expertise-row{
+        margin-top: 4rem;
+    }
+    .studios-domain-expertise-row .studios-expertise-card{
+        padding: 3rem 1.2rem;
+        border: 1.5px solid #333333;
+    }
+    .studios-domain-expertise-row .studios-expertise-card .icon svg{
+        width: 45px;
+    }
+    .studios-domain-expertise-row .studios-expertise-card span{
+        font-size: calc(1.2rem + 0.5vw);
+        margin-top: 1.5rem;
+    }
 }
 /* Domain Expertise End */
 
@@ -553,6 +583,15 @@ footer .social-btns a{
 }
 .our-portfolio h3 span{
     color: #fcb913;
+}
+
+/* Media Queries */
+@media screen and (min-width: 1230px) and (max-width: 1399px){
+    
+}
+
+@media screen and (min-width: 992px) and (max-width: 1229px){
+    
 }
 /* Our Portfolio End */
 

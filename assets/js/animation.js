@@ -676,8 +676,8 @@ document.addEventListener("DOMContentLoaded", () => {
         stagger: 0.17,
         scrollTrigger: {
           trigger: section,
-          start: "top 75%",
-          end: "top 25%",
+          start: "top 80%",
+          end: "top 30%",
           scrub: 5,
           scroller: document.body,
           once: true, // ensures it won't run again
