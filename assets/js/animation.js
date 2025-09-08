@@ -688,4 +688,28 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
+// Studios Page Our Portfolio Heading
+document.addEventListener("DOMContentLoaded", () => {
+  let section = document.querySelector("#studios-stack-section-3");
+  let heading = section.querySelector("h3");
+
+   gsap.fromTo(
+    heading,
+    { opacity: 0, y: 60 },
+    {
+      opacity: 1,
+      y: 0,
+      ease: "power3.out",
+      scrollTrigger: {
+        trigger: section,
+        start: "top 80%",
+        end: "top 30%",
+        scrub: 4,  // ties animation to scroll (works up & down)
+        scroller: document.body, // needed if using Lenis
+        markers: false,
+      },
+    }
+  );
+});
+
 // ----------------------------------------------------------------------------------------------------------

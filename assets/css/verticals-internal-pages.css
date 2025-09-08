@@ -574,7 +574,7 @@ footer .social-btns a{
 
 /* Our Portfolio Start */
 .our-portfolio{
-    padding: 4rem 5% 3rem 5%;
+    padding: 4rem 5% 5rem 5%;
 }
 .our-portfolio h3{
     color: #fff;
@@ -587,11 +587,21 @@ footer .social-btns a{
 
 /* Media Queries */
 @media screen and (min-width: 1230px) and (max-width: 1399px){
-    
+    .our-portfolio{
+        padding: 3.5rem 5% 5rem 5%;
+    }
+    .our-portfolio h3{
+        font-size: calc(5rem + 0.5vw);
+    }
 }
 
 @media screen and (min-width: 992px) and (max-width: 1229px){
-    
+    .our-portfolio{
+        padding: 3rem 5% 5rem 5%;
+    }
+    .our-portfolio h3{
+        font-size: calc(4.5rem + 0.5vw);
+    }
 }
 /* Our Portfolio End */
 
