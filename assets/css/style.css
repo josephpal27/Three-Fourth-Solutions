@@ -1031,7 +1031,7 @@ footer .social-btns a{
   transition: all 0.2s ease;
 }
 footer .social-btns a:hover{
-  background-color: #fcb913;
+  background-color: #fcb913 !important;
   color: #fff;
 }
 

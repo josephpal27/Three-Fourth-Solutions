@@ -159,7 +159,7 @@
     margin-top: 5rem;
 }
 .domain-expertise-card-row .expertise-card{
-    width: 31%;
+    width: 31.7%;
     border-radius: 15px;
     position: relative;
     color: #fff;
@@ -628,12 +628,14 @@ footer .social-btns a{
 .studios-trusted-by{
     padding: 4rem 5% 5rem 5%;
 }
-.studios-trusted-by h4{
+.studios-trusted-by h4,
+.studios-trusted-by h3{
     color: #fff;
     font-size: calc(5.5rem + 0.5vw);
     font-weight: 700;
 }
-.studios-trusted-by h4 span{
+.studios-trusted-by h4 span,
+.studios-trusted-by h3 span{
     color: #fcb913;
 }
 .studios-trusted-by p{
@@ -663,7 +665,8 @@ footer .social-btns a{
     .studios-trusted-by{
         padding: 3.5rem 5% 5rem 5%;
     }
-    .studios-trusted-by h4{
+    .studios-trusted-by h4,
+    .studios-trusted-by h3{
         font-size: calc(5rem + 0.5vw);
     }
     .studios-trusted-by p{
@@ -684,7 +687,8 @@ footer .social-btns a{
     .studios-trusted-by{
         padding: 3rem 5% 5rem 5%;
     }
-    .studios-trusted-by h4{
+    .studios-trusted-by h4,
+    .studios-trusted-by h3{
         font-size: calc(4.5rem + 0.5vw);
     }
     .studios-trusted-by p{
@@ -703,5 +707,150 @@ footer .social-btns a{
 /* Trusted By End */
 
 /* Studio Page Styles End */
+
+/* ---------------------------------------------------------------------------------------------------------------------------- */
+
+/* Finance Page Styles Start */
+
+/* Stacking Sections Start */
+#finance-stack-section-1{
+    background-color: #232323;
+    height: 100vh;
+}
+#finance-stack-section-2{
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+    background-color: #111;
+    box-shadow: 0px -7px 10px 0px #fcba1340;
+}
+#finance-stack-section-3{
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+    background-color: #222;
+    box-shadow: 0px -7px 10px 0px #fcba1340;
+    min-height: 106vh;
+}
+#finance-stack-section-4{
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+    background-color: #111;
+    box-shadow: 0px -7px 10px 0px #fcba1340;
+}
+#finance-stack-section-5{
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+    background-color: #222;
+    box-shadow: 0px -7px 10px 0px #fcba1340;
+}
+/* Stacking Sections Start */
+
+/* Navbar Start */
+#finance-stack-section-1 .navbar{
+    background-color: #232323;
+}
+/* Navbar End */
+
+/* Verticals Internal Banner Start */
+#finance-stack-section-1 .verticals-internal-banner{
+    padding: 0 5% 4rem 5%;
+}
+#finance-stack-section-1 .verticals-internal-banner .banner-right img{
+    margin-top: 1.5rem;
+}
+
+/* Media Queries */
+@media screen and (min-width: 1230px) and (max-width: 1399px){
+    #finance-stack-section-1 .verticals-internal-banner{
+        padding: 0 5% 3rem 5%;
+    }
+    #finance-stack-section-1 .verticals-internal-banner .banner-right img{
+        margin-top: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1229px){
+    #finance-stack-section-1 .verticals-internal-banner{
+        padding: 0 5% 2rem 5%;
+    }
+    #finance-stack-section-1 .verticals-internal-banner .banner-right img{
+        margin-top: 1.3rem;
+    }
+}
+/* Verticals Internal Banner End */
+
+/* Domain Expertise Start */
+#finance-stack-section-2 .domain-expertise{
+    padding: 4rem 5% 8rem 5%;
+}
+#finance-stack-section-2 .domain-expertise-card-row{
+    margin-top: 3.5rem;
+}
+#finance-stack-section-2 .domain-expertise-card-row .expertise-card{
+    margin-bottom: 2.2rem;
+}
+#finance-stack-section-2 .expertise-card .overlay{
+    background: #1e1e1e;
+}
+#finance-stack-section-2 .expertise-card .overlay:hover{
+    background: #1515159c;
+}
+#finance-stack-section-2 .expertise-card .icon svg{
+    color: #fbbf24;
+}
+
+/* Media Queries */
+@media screen and (min-width: 1230px) and (max-width: 1399px){
+    #finance-stack-section-2 .domain-expertise{
+        padding: 4rem 5% 8rem 5%;
+    }
+    #finance-stack-section-2 .domain-expertise-card-row{
+        margin-top: 3rem;
+    }
+    #finance-stack-section-2 .domain-expertise-card-row .expertise-card{
+        margin-bottom: 2rem;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1229px){
+    #finance-stack-section-2 .domain-expertise{
+        padding: 3.5rem 5% 7rem 5%;
+    }
+    #finance-stack-section-2 .domain-expertise-card-row{
+        margin-top: 2.7rem;
+    }
+    #finance-stack-section-2 .domain-expertise-card-row .expertise-card{
+        margin-bottom: 1.7rem;
+    }
+    #finance-stack-section-2 .expertise-card .icon svg{
+        width: 42px;
+    }
+}
+/* Domain Expertise End */
+
+/* Trusted By Start */
+#finance-stack-section-3 .studios-trusted-by .clients-slider {
+  background-color: #3c3c3c;
+}
+/* Trusted By End */
+
+/* TFS Network Logos Start */
+#finance-stack-section-4 .network-logo-row .network-logo-box{
+  background-color: #1e1e1e;
+}
+#finance-stack-section-4 .network-logo-row .network-logo-box:hover{
+  background-color: #1c1c1c;
+}
+/* TFS Network Logos End */
+
+/* Footer Start */
+#finance-stack-section-5 footer{
+  background-color: #111;
+}
+#finance-stack-section-5 footer .social-btns a{
+  background-color: #282828;
+}
+/* Footer End */
+
+/* Finance Page Styles End */
 
 /* ---------------------------------------------------------------------------------------------------------------------------- */
