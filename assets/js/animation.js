@@ -712,4 +712,57 @@ document.addEventListener("DOMContentLoaded", () => {
   );
 });
 
+// Studios Trusted By ClientsSlider
+document.addEventListener("DOMContentLoaded", () => {
+  const slider = document.querySelector("#studios-stack-section-4 .clients-slider");
+  const images = Array.from(slider.querySelectorAll("img"));
+
+  // Duplicate the images once to make the loop seamless
+  images.forEach(img => {
+    slider.appendChild(img.cloneNode(true));
+  });
+
+  const allImages = slider.querySelectorAll("img");
+
+  // Total width of all original images
+  const totalWidth = images.reduce((sum, img) => sum + img.offsetWidth, 0);
+
+  // Animate using pixel values (no gaps)
+  gsap.to(allImages, {
+    x: -totalWidth,
+    duration: 20, // adjust speed
+    ease: "none",
+    repeat: -1,
+    modifiers: {
+      x: gsap.utils.unitize(x => parseFloat(x) % -totalWidth) // loop seamlessly
+    }
+  });
+});
+
+// Studios Trusted By Heading
+document.addEventListener("DOMContentLoaded", () => {
+  let section = document.querySelector(".studios-trusted-by");
+  let domainHead = section.querySelector("h4");
+
+  if (domainHead) {
+    gsap.fromTo(
+      domainHead,
+      { opacity: 0, y: -60 }, // start above
+      {
+        opacity: 1,
+        y: 0, // settle into place
+        ease: "power2.out",
+        scrollTrigger: {
+          trigger: domainHead,
+          start: "top 85%",
+          end: "top 10%",
+          scrub: 5,
+          scroller: document.body,
+          once: true,
+          markers: false,
+        },
+      }
+    );
+  }
+});
 // ----------------------------------------------------------------------------------------------------------

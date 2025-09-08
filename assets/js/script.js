@@ -234,4 +234,9 @@ document.querySelectorAll('.influencer-outreach .influencer-vid-box video').forE
   });
 });
 
+document.querySelectorAll('.studios-trusted-by .clients-slider img').forEach(img => {
+  img.addEventListener('load', () => {
+    ScrollTrigger.refresh();
+  });
+});
 // ---------------------------------------------------------------------------------------------------------------

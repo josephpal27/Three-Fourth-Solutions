@@ -80,3 +80,12 @@ ScrollTrigger.addEventListener("refresh", () => {
 });
 
 // ---------------------------------------------------------------------------------------------------------------
+
+// Refresh ScrollTrigger on each lazy-loaded image
+document.querySelectorAll('#studios-stack-section-3 .our-portfolio img').forEach(img => {
+  img.addEventListener('load', () => {
+    ScrollTrigger.refresh();
+  });
+});
+
+// ---------------------------------------------------------------------------------------------------------------

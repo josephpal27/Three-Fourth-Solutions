@@ -466,6 +466,25 @@ footer .social-btns a{
     background-color: #222;
     box-shadow: 0px -7px 10px 0px #fcba1340;
 }
+#studios-stack-section-4{
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+    background-color: #111;
+    box-shadow: 0px -7px 10px 0px #fcba1340;
+    min-height: 106vh;
+}
+#studios-stack-section-5{
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+    background-color: #222;
+    box-shadow: 0px -7px 10px 0px #fcba1340;
+}
+#studios-stack-section-6{
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+    background-color: #111;
+    box-shadow: 0px -7px 10px 0px #fcba1340;
+}
 /* Stacking Sections Start */
 
 /* Navbar Start */
@@ -604,6 +623,84 @@ footer .social-btns a{
     }
 }
 /* Our Portfolio End */
+
+/* Trusted By Start */
+.studios-trusted-by{
+    padding: 4rem 5% 5rem 5%;
+}
+.studios-trusted-by h4{
+    color: #fff;
+    font-size: calc(5.5rem + 0.5vw);
+    font-weight: 700;
+}
+.studios-trusted-by h4 span{
+    color: #fcb913;
+}
+.studios-trusted-by p{
+    font-size: calc(2rem + 0.5vw);
+    font-weight: 600;
+    color: #fff;
+    margin-top: 1rem;
+}
+
+.studios-trusted-by .clients-slider {
+  background-color: #2c2c2c;
+  margin-top: 4rem;
+  border-radius: 35px;
+  padding: 1.7rem 0;
+  overflow: hidden;
+  display: flex;
+  box-shadow: 6px -6px 10px 0px #d1d1d140;
+}
+.studios-trusted-by .clients-slider img {
+  flex: 0 0 20%; /* 5 images in viewport */
+  max-width: 18%;
+  filter: grayscale(100%) invert(100);
+}
+
+/* Media Queries */
+@media screen and (min-width: 1230px) and (max-width: 1399px){
+    .studios-trusted-by{
+        padding: 3.5rem 5% 5rem 5%;
+    }
+    .studios-trusted-by h4{
+        font-size: calc(5rem + 0.5vw);
+    }
+    .studios-trusted-by p{
+        font-size: calc(1.8rem + 0.5vw);
+        margin-top: 0.9rem;
+    }
+    .studios-trusted-by .clients-slider {
+        margin-top: 3.7rem;
+        border-radius: 32px;
+        box-shadow: 5.5px -5.5px 10px 0px #d1d1d140;
+    }
+    .studios-trusted-by .clients-slider img {
+        max-width: 17%;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1229px){
+    .studios-trusted-by{
+        padding: 3rem 5% 5rem 5%;
+    }
+    .studios-trusted-by h4{
+        font-size: calc(4.5rem + 0.5vw);
+    }
+    .studios-trusted-by p{
+        font-size: calc(1.6rem + 0.5vw);
+        margin-top: 0.8rem;
+    }
+    .studios-trusted-by .clients-slider {
+        margin-top: 3.5rem;
+        border-radius: 30px;
+        box-shadow: 5px -5px 10px 0px #d1d1d140;
+    }
+    .studios-trusted-by .clients-slider img {
+        max-width: 17%;
+    }
+}
+/* Trusted By End */
 
 /* Studio Page Styles End */
 
