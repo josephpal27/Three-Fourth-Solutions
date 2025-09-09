@@ -1,0 +1,23 @@
+# Enable Rewrite Engine
+RewriteEngine On
+
+#######################################
+# Force HTTPS and www
+#######################################
+RewriteCond %{HTTPS} off [OR]
+RewriteCond %{HTTP_HOST} !^www\. [NC]
+RewriteRule ^ https://www.%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+#######################################
+# Block direct access to /assets/
+#######################################
+RewriteCond %{REQUEST_URI} ^/assets/ [NC]
+RewriteRule .* /404.html [L,R=302]
+
+#######################################
+# Redirect invalid URLs to custom 404
+#######################################
+ErrorDocument 404 /404.html
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule .* /404.html [L,R=302]
