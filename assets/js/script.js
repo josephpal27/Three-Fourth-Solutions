@@ -196,6 +196,42 @@ logoBox.addEventListener("mouseleave", () => {
 
 // ---------------------------------------------------------------------------------------------------------------
 
+// Back to Top Button
+document.addEventListener("DOMContentLoaded", () => {
+  const backToTop = document.getElementById("backToTop");
+  const progressCircle = document.querySelector(".back-to-top circle.progress");
+  const pathLength = 2 * Math.PI * 26; // circumference for r=26
+
+  function updateProgress() {
+    const scrollTop = window.scrollY || document.documentElement.scrollTop;
+    const scrollHeight =
+      document.documentElement.scrollHeight - window.innerHeight;
+    const progress = scrollTop / scrollHeight;
+    progressCircle.style.strokeDasharray = pathLength;
+    progressCircle.style.strokeDashoffset = pathLength - progress * pathLength;
+
+    // show button after scrolling 200px
+    if (scrollTop > 500) {
+      backToTop.classList.add("show");
+    } else {
+      backToTop.classList.remove("show");
+    }
+  }
+
+  // Hook into Lenis scroll
+  lenis.on("scroll", updateProgress);
+
+  // Also run once on load
+  updateProgress();
+
+  // Scroll to top smoothly using Lenis
+  backToTop.addEventListener("click", () => {
+    lenis.scrollTo(0, { duration: 1.2 });
+  });
+});
+
+// ---------------------------------------------------------------------------------------------------------------        
+
 // Refresh ScrollTrigger after all images are loaded
 window.addEventListener("load", function () {
   setTimeout(() => {
