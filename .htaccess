@@ -2,11 +2,22 @@
 RewriteEngine On
 
 #######################################
-# Force HTTPS and www
+# Force HTTPS and non-www
 #######################################
 RewriteCond %{HTTPS} off [OR]
-RewriteCond %{HTTP_HOST} !^www\. [NC]
-RewriteRule ^ https://www.%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
+RewriteRule ^ https://%1%{REQUEST_URI} [L,R=301]
+
+#######################################
+# Remove .html from URLs
+#######################################
+# If user requests /about.html → redirect to /about
+RewriteCond %{THE_REQUEST} \s/([^.]+)\.html[\s?] [NC]
+RewriteRule ^ %1 [L,R=301]
+
+# Internally serve the .html file when /about is requested
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^([^/]+)$ $1.html [L]
 
 #######################################
 # Block direct access to /assets/
