@@ -47,7 +47,7 @@ mm.add(
 
 // ---------------------------------------------------------------------------------------------------------------
 
-// Functionality For Home Page Awards Slider
+// Functionality For Public Relations Page Media Cards Slider
  const prMediaSwiper = new Swiper(".media-cards-slider", {
   slidesPerView: 3,
   loop: true,
