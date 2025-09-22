@@ -282,3 +282,21 @@ document.querySelectorAll('.studios-trusted-by .clients-slider img').forEach(img
   });
 });
 // ---------------------------------------------------------------------------------------------------------------
+
+// Functionality For Mobile View Popup Animation
+const isMobile = window.innerWidth <= 991;
+
+if (isMobile) {
+  gsap.fromTo(
+    ".mobile-popup img",
+    { rotation: -10, transformOrigin: "top center" }, // start tilted left
+    {
+      rotation: 10, // swing to the right
+      duration: 2,
+      repeat: -1,
+      yoyo: true,
+      ease: "sine.inOut",
+    }
+  );
+}
+// ---------------------------------------------------------------------------------------------------------------

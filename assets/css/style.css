@@ -132,6 +132,13 @@ body {
     border: 1.8px solid #fff;
   }
 }
+
+@media screen and (max-width: 991px){
+  .custom-cursor,
+  .custom-cursor-outer {
+    display: none;
+  }
+}
 /* Custom Cursor End */
 
 /* Preloader Start */
@@ -1183,3 +1190,55 @@ footer .social-btns a:hover{
   }
 }
 /* Back to Top Btn Start */
+
+/* Mobile Popup Start */
+.mobile-popup{
+  height: 100vh;
+  background-color: #090909;
+  padding: 0 1rem 3rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.mobile-popup img{
+  width: 230px;
+}
+.mobile-popup p{
+  color: #fff;
+  text-align: center;
+  font-size: calc(1.2rem + 0.5vw);
+  font-weight: 600;
+  margin-top: 3rem;
+}
+.mobile-popup button{
+  color: #fff;
+  font-size: calc(1.1rem + 0.5vw);
+  font-weight: 600;
+  margin-top: 1rem;
+  background-color: #fcb913;
+  border: none;
+  outline: none;
+  padding: 0.5rem 1.5rem;
+  border-radius: 30px;
+  transition: all 0.1s ease;
+}
+.mobile-popup button:active{
+  scale: 0.95;
+}
+
+@media screen and (min-width: 992px){
+  .mobile-popup{
+    display: none;
+  }
+}
+@media screen and (max-width: 991px){
+  #smooth-wrapper{
+    display: none;
+  }
+}
+@media screen and (min-width: 400px) and (max-width: 991px){
+  .mobile-popup p{
+    font-size: calc(1.1rem + 0.5vw);
+  }
+}
+/* Mobile Popup End */
