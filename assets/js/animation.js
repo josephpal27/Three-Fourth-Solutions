@@ -282,7 +282,8 @@ document.addEventListener("DOMContentLoaded", () => {
         scrollTrigger: {
           trigger: section,
           start: "top 80%",
-          toggleActions: "restart reset restart reset",
+          // toggleActions: "restart reset restart reset",
+          once: true,
           markers: false,
         }
       }
