@@ -1195,30 +1195,30 @@ footer .social-btns a:hover{
 .mobile-popup{
   height: 100vh;
   background-color: #090909;
-  padding: 0 1rem 3rem 1rem;
+  padding: 0 1.8rem 3rem 1.8rem;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 .mobile-popup img{
   width: 230px;
+  margin-bottom: 3rem;
 }
 .mobile-popup p{
   color: #fff;
   text-align: center;
   font-size: calc(1.2rem + 0.5vw);
   font-weight: 600;
-  margin-top: 3rem;
 }
 .mobile-popup button{
   color: #fff;
-  font-size: calc(1.1rem + 0.5vw);
+  font-size: calc(1.3rem + 0.5vw);
   font-weight: 600;
-  margin-top: 1rem;
+  margin-top: 1.2rem;
   background-color: #fcb913;
   border: none;
   outline: none;
-  padding: 0.5rem 1.5rem;
+  padding: 0.5rem 1.8rem;
   border-radius: 30px;
   transition: all 0.1s ease;
 }
@@ -1238,7 +1238,12 @@ footer .social-btns a:hover{
 }
 @media screen and (min-width: 400px) and (max-width: 991px){
   .mobile-popup p{
-    font-size: calc(1.1rem + 0.5vw);
+    font-size: calc(1.5rem + 0.5vw);
+  }
+  .mobile-popup button{
+    font-size: calc(1.4rem + 0.5vw);
+    margin-top: 1.2rem;
+    padding: 0.5rem 2rem;
   }
 }
 /* Mobile Popup End */
