@@ -4,11 +4,12 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Careers - Three Fourth Solutions</title>
+    <title>Verticals - Three Fourth Solutions</title>
     <meta property="og:image" content="https://threefourth.in/assets/images/logo/og-logo/og-tfs.png">
     <meta name="twitter:image" content="https://threefourth.in/assets/images/logo/og-logo/og-tfs.png">
-    <meta name="title" content="Careers - Three Fourth Solutions">
-    <meta name="description" content="Welcome to the TFS Network, where creativity and innovation collide to elevate brands in an ever-evolving landscape. We believe every brand has a compelling story just waiting to unfold, and we’re here to help you tell it.">
+    <meta name="title" content="Verticals - Three Fourth Solutions">
+    <meta name="description"
+        content="Welcome to the TFS Network, where creativity and innovation collide to elevate brands in an ever-evolving landscape. We believe every brand has a compelling story just waiting to unfold, and we’re here to help you tell it.">
     <link rel="shortcut icon" href="assets/images/logo/fav-icon.webp" type="image/x-icon">
     <!-- Bootstrap CSS Link -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -17,43 +18,19 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.13.1/font/bootstrap-icons.min.css" integrity="sha512-t7Few9xlddEmgd3oKZQahkNI4dS6l80+eGEzFQiqtyVYdvcSG2D3Iub77R20BdotfRPA9caaRkg1tyaJiPmO0g==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
     <!-- Link to Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Anek+Bangla:wght@100..800&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap"
         rel="stylesheet">
+    <!-- Swiper Link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@latest/swiper-bundle.min.css" />
     <!-- CSS Link -->
     <link rel="stylesheet" href="assets/css/style.css">
-
-    <style>
-        body {
-            background-color: #090909;
-        }
-
-        .banner {
-            display: flex;
-            justify-content: center;
-        }
-
-        .banner img {
-            width: 400px;
-            margin-top: -10px;
-        }
-
-        /* Media Queries */
-        @media screen and (min-width: 1230px) and (max-width: 1399px) {
-            .banner img {
-                width: 370px;
-            }
-        }
-
-        @media screen and (min-width: 992px) and (max-width: 1229px) {
-            .banner img {
-                width: 330px;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="assets/css/verticals.css">
 </head>
 
 <body>
@@ -61,80 +38,172 @@
     <div id="smooth-wrapper">
         <div id="smooth-content">
 
-            <!-- Navbar Start -->
-            <nav class="navbar navbar-expand-lg">
-                <!-- Logo -->
-                <a class="navbar-brand" href="index.html">
-                    <img src="./assets/images/logo/navLogo.gif" alt="logo" loading="lazy">
-                </a>
-                <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#mobileMenu" aria-controls="mobileMenu">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <!-- Desktop Menu -->
-                <div class="collapse navbar-collapse justify-content-center d-none d-lg-flex">
-                    <ul class="navbar-nav mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">HOME</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="verticals.html">VERTICALS</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="media.html">PRESS & MEDIA</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="careers.html">CAREERS</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact.html">CONTACT US</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="social-btns">
-                    <a href="https://www.facebook.com/threefourth.in/" target="_blank"><i
-                            class="fa-brands fa-facebook-f"></i></a>
-                    <a href="https://www.instagram.com/threefourthsolutions/" target="_blank"><i
-                            class="fa-brands fa-instagram"></i></a>
-                    <a href="https://www.linkedin.com/company/three-fourth-solutions/mycompany/" target="_blank"><i
-                            class="fa-brands fa-linkedin-in"></i></a>
-                </div>
-            </nav>
-            <!-- Offcanvas Mobile Menu -->
-            <div class="offcanvas offcanvas-start" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
-                <div class="offcanvas-header">
-                    <a class="navbar-brand" href="index.html">
-                        <img src="./assets/images/logo/navLogo.gif" alt="logo" loading="lazy">
-                    </a>
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">HOME</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="verticals.html">VERTICALS</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="media.html">PRESS & MEDIA</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="careers.html">CAREERS</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact.html">CONTACT US</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <!-- Navbar End -->
+            <!-- Stacking Sections Start -->
+            <section class="stacking-sections-container">
+                <!-- Stack Section 1 Start-->
+                <section class="stack-section" id="verticals-stack-section-1">
+                    <!-- Navbar Start -->
+                    <nav class="navbar navbar-expand-lg">
+                        <!-- Logo -->
+                        <a class="navbar-brand" href="index.html">
+                            <img src="./assets/images/logo/navLogo.gif" alt="logo" loading="lazy">
+                        </a>
+                        <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#mobileMenu" aria-controls="mobileMenu">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <!-- Desktop Menu -->
+                        <div class="collapse navbar-collapse justify-content-center d-none d-lg-flex">
+                            <ul class="navbar-nav mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="index.html">HOME</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="verticals.html">VERTICALS</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="media.html">PRESS & MEDIA</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="careers.html">CAREERS</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="contact.html">CONTACT US</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="social-btns">
+                            <a href="https://www.facebook.com/threefourth.in/" target="_blank"><i
+                                    class="fa-brands fa-facebook-f"></i></a>
+                            <a href="https://www.instagram.com/threefourthsolutions/" target="_blank"><i
+                                    class="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/company/three-fourth-solutions/mycompany/"
+                                target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                        </div>
+                    </nav>
+                    <!-- Offcanvas Mobile Menu -->
+                    <div class="offcanvas offcanvas-start" tabindex="-1" id="mobileMenu"
+                        aria-labelledby="mobileMenuLabel">
+                        <div class="offcanvas-header">
+                            <a class="navbar-brand" href="index.html">
+                                <img src="./assets/images/logo/navLogo.gif" alt="logo" loading="lazy">
+                            </a>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="index.html">HOME</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="verticals.html">VERTICALS</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="media.html">PRESS & MEDIA</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="careers.html">CAREERS</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="contact.html">CONTACT US</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Navbar End -->
 
-            <!-- Banner Start -->
-            <div class="banner">
-                <img src="assets/images/coming-soon.webp" alt="coming soon" loading="lazy">
-            </div>
-            <!-- Banner End -->
+                    <!-- TFS Careers Start -->
+                    <div class="career">
+                        <h1>TFS <span>Careers</span></h1>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+                        <div class="career-form">
+                            <form action="">
+                                <div class="input-row">
+                                    <input type="text" placeholder="Full Name" required>
+                                    <input type="email" placeholder="Email" required>
+                                </div>
+                                <div class="input-row">
+                                    <input type="number" placeholder="Contact No." required>
+                                    <input type="number" placeholder="Years of Experience" required>
+                                </div>
+                                <div class="input-row">
+                                    <input type="file" placeholder="Upload Resume" required>
+                                    <input type="text" placeholder="Remarks (If any)">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- TFS Careers End -->
+                </section>
+                <!-- Stack Section 1 End-->
+
+                <!-- Stack Section 2 Start -->
+                <section class="stack-section" id="verticals-stack-section-2">
+                    <!-- Work Together Start -->
+                    <div class="work-together">
+                        <span>HAVE A PROJECT IN MIND?</span>
+                        <p>LET'S WORK</p>
+                        <p>TOGETHER</p>
+                        <div class="btn-row">
+                            <a href="contact.html"><button>GET IN TOUCH</button></a>
+                            <a href="contact.html"><button><i class="bi bi-arrow-up-right"></i></button></a>
+                        </div>
+                    </div>
+                    <!-- Work Together End -->
+
+                    <!-- Footer Start -->
+                    <footer>
+                        <div class="foot-logo">
+                            <img src="assets/images/logo/tfs-logo.webp" alt="logo" loading="lazy">
+                        </div>
+                        <div class="foot-content">
+                            <div class="foot-content-box">
+                                <span>Company</span>
+                                <a href="index.html">About Us</a>
+                                <a href="index.html">Our Team</a>
+                                <a href="index.html">Awards</a>
+                                <a href="verticals.html">Verticals</a>
+                            </div>
+                            <div class="foot-content-box">
+                                <span>Services</span>
+                                <a href="pr.html">Public Relations</a>
+                                <a href="studios.html">Studio</a>
+                                <a href="finance.html">Finance</a>
+                                <a href="http://storysutra.online/" target="_blank">Story Sutra</a>
+                            </div>
+                            <div class="foot-content-box">
+                                <span>Partnership</span>
+                                <p>Ready to collaborate?</p>
+                                <p>We’d love to hear from you</p>
+                                <p>Drop us a line below</p>
+                                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=solutions@threefourth.in" target="_blank"><i class="bi bi-envelope-check-fill"></i></a>
+                            </div>
+                            <div class="foot-content-box">
+                                <span>Our Locations</span>
+                                <p>Kolkata</p>
+                                <p>Delhi</p>
+                            </div>
+                            <div class="foot-content-box">
+                                <span>Contact Us</span>
+                                <a href="contact.html">Get a Quote</a>
+                                <a href="careers.html">Join Our Team</a>
+                            </div>
+                            <div class="foot-content-box">
+                                <span>Follow Us</span>
+                                <div class="social-btns">
+                                    <a href="https://www.facebook.com/threefourth.in/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                                    <a href="https://www.instagram.com/threefourthsolutions/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                                    <a href="https://www.linkedin.com/company/three-fourth-solutions/mycompany/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </footer> 
+                    <!-- Footer End -->
+                </section>
+                <!-- Stack Section 2 End -->
+            </section>
+            <!-- Stacking Sections End -->
 
         </div>
     </div>
@@ -142,6 +211,15 @@
     <!-- Custom Cursor -->
     <div class="custom-cursor" id="cursor-dot" aria-hidden="true"></div>
     <div class="custom-cursor-outer" id="cursor-ring" aria-hidden="true"></div>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top" aria-label="Back to Top">
+        <svg class="progress-circle" width="60" height="60">
+            <circle class="bg" cx="30" cy="30" r="26"></circle>
+            <circle class="progress" cx="30" cy="30" r="26"></circle>
+        </svg>
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
 
     <!-- Mobile Popup -->
     <div class="mobile-popup">
@@ -158,61 +236,24 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
 
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@latest/swiper-bundle.min.js"></script>
+
+    <!-- Tilt JS Link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.2/vanilla-tilt.min.js"></script>
+
     <!-- GSAP Link -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
 
+    <!-- ScrollTrigger Link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+    <!-- Lenis Link -->
+    <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.27/bundled/lenis.min.js"></script>
+
     <!-- JS Link -->
     <script src="assets/js/script.js"></script>
-
-    <script>
-        gsap.fromTo(".banner img",
-            { rotation: -10, transformOrigin: "top center" }, // start tilted left
-            {
-                rotation: 10, // swing to the right
-                duration: 2,
-                repeat: -1,
-                yoyo: true,
-                ease: "sine.inOut"
-            }
-        );
-    </script>
-
-    <script>
-        (function () {
-            const dot = document.getElementById("cursor-dot");
-            const ring = document.getElementById("cursor-ring");
-
-            let mouseX = window.innerWidth / 2;
-            let mouseY = window.innerHeight / 2;
-            let dotX = mouseX, dotY = mouseY;
-            let ringX = mouseX, ringY = mouseY;
-
-            const dotEasing = 0.35;
-            const ringEasing = 0.12;
-
-            // Track mousemove normally
-            window.addEventListener("mousemove", (e) => {
-                // Use pageX/pageY so scroll smoothing doesn't break it
-                mouseX = e.pageX;
-                mouseY = e.pageY;
-            });
-
-            function render() {
-                dotX += (mouseX - dotX) * dotEasing;
-                dotY += (mouseY - dotY) * dotEasing;
-
-                ringX += (mouseX - ringX) * ringEasing;
-                ringY += (mouseY - ringY) * ringEasing;
-
-                // Position absolutely in relation to the document, not transformed content
-                dot.style.transform = `translate3d(${dotX}px, ${dotY}px, 0) translate(-50%, -50%)`;
-                ring.style.transform = `translate3d(${ringX}px, ${ringY}px, 0) translate(-50%, -50%)`;
-
-                requestAnimationFrame(render);
-            }
-            requestAnimationFrame(render);
-        })();
-    </script>
+    <script src="assets/js/animation.js"></script>
 
 </body>
 
