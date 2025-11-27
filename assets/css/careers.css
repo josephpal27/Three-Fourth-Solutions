@@ -42,10 +42,10 @@
     justify-content: center;
 }
 .careers form{
-    width: 75%;
-    /* background-color: #0e0e0e;
-    padding: 4rem;
-    border-radius: 30px; */
+    width: 80%;
+    background-color: #1d1d1d;
+    padding: 2rem 4rem 4rem 4rem;
+    border-radius: 30px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -60,18 +60,18 @@
 .careers form input,
 .careers form textarea{
     width: 100%;
-    padding: 1.4rem 1rem;
+    padding: 1.5rem 1rem;
     background-color: transparent;
     border: none;
     outline: none;
-    border-bottom: 2px solid #282828;
+    border-bottom: 2px solid #9d9d9d;
     margin-bottom: 0.5rem;
     color: #fff;
     font-size: calc(1rem + 0.5vw);
 }
 .careers form input:focus,
 .careers form textarea:focus{
-    border-bottom: 2px solid #3b3b3b;
+    border-bottom: 2px solid #fff;
 }
 .careers form input::placeholder,
 .careers form textarea::placeholder{
@@ -117,9 +117,9 @@
 .custom-file-label{
     width: 100%;
     display: block;
-    padding: 1.4rem 1rem;
+    padding: 1.5rem 1rem;
     background-color: transparent;
-    border-bottom: 2px solid #282828;
+    border-bottom: 2px solid #9d9d9d;
     margin-bottom: 0.5rem;
     color: #fff;
     font-size: calc(1rem + 0.5vw);
