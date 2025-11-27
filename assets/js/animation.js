@@ -824,3 +824,23 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 // ----------------------------------------------------------------------------------------------------------
+
+// Careers Page Animations
+
+// Careers Heading in "Careers Page"
+gsap.to("#careers-stack-section-1 .careers h1", {
+    y: 0,
+    opacity: 1,
+    duration: 1.5,
+    stagger: 0.3, // delay between words
+    ease: "power3.out",
+});
+
+gsap.to("#careers-stack-section-1 .careers p", {
+    y: 0,
+    opacity: 1,
+    duration: 2,
+    ease: "power3.out",
+});
+
+// ----------------------------------------------------------------------------------------------------------

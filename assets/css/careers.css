@@ -17,8 +17,8 @@
     color: #fff;
     font-size: calc(5.5rem + 0.5vw);
     font-weight: 700;
-    /* transform: translateY(70px); */
-    /* opacity: 0; */
+    transform: translateY(70px);
+    opacity: 0;
 }
 .careers h1 span{
     color: #fcb913;
@@ -30,8 +30,8 @@
     margin-top: 1rem;
     width: max-content;
     transition: color 0.3s ease;
-    /* transform: translateY(50px); */
-    /* opacity: 0; */
+    transform: translateY(50px);
+    opacity: 0;
 }
 .careers p:hover{
     color: #fcb913;
