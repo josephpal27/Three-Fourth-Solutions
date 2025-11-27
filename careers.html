@@ -30,7 +30,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@latest/swiper-bundle.min.css" />
     <!-- CSS Link -->
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/verticals.css">
+    <link rel="stylesheet" href="assets/css/careers.css">
 </head>
 
 <body>
@@ -41,7 +41,7 @@
             <!-- Stacking Sections Start -->
             <section class="stacking-sections-container">
                 <!-- Stack Section 1 Start-->
-                <section class="stack-section" id="verticals-stack-section-1">
+                <section class="stack-section" id="careers-stack-section-1">
                     <!-- Navbar Start -->
                     <nav class="navbar navbar-expand-lg">
                         <!-- Logo -->
@@ -114,23 +114,31 @@
                     <!-- Navbar End -->
 
                     <!-- TFS Careers Start -->
-                    <div class="career">
+                    <div class="careers">
                         <h1>TFS <span>Careers</span></h1>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
-                        <div class="career-form">
+                        <div class="careers-form">
                             <form action="">
-                                <div class="input-row">
-                                    <input type="text" placeholder="Full Name" required>
-                                    <input type="email" placeholder="Email" required>
+                                <div class="input-box">
+                                    <input type="text" placeholder="Full Name*" required>
                                 </div>
-                                <div class="input-row">
-                                    <input type="number" placeholder="Contact No." required>
-                                    <input type="number" placeholder="Years of Experience" required>
+                                <div class="input-box">
+                                    <input type="email" placeholder="Email*" required>
                                 </div>
-                                <div class="input-row">
-                                    <input type="file" placeholder="Upload Resume" required>
-                                    <input type="text" placeholder="Remarks (If any)">
+                                <div class="input-box">
+                                    <input type="number" placeholder="Contact No.*" required>
                                 </div>
+                                <div class="input-box">
+                                    <input type="number" placeholder="Years of Experience*" required>
+                                </div>
+                                <div class="input-box resume-box">
+                                    <label for="resumeUpload" class="custom-file-label">Upload Resume*</label>
+                                    <input type="file" id="resumeUpload" required>
+                                </div>
+                                <div class="input-box remarks-box">
+                                    <textarea name="Remarks" placeholder="Remarks (If any)"></textarea>
+                                </div>
+                                <button type="submit">Send Details</button>
                             </form>
                         </div>
                     </div>
@@ -139,7 +147,7 @@
                 <!-- Stack Section 1 End-->
 
                 <!-- Stack Section 2 Start -->
-                <section class="stack-section" id="verticals-stack-section-2">
+                <section class="stack-section" id="careers-stack-section-2">
                     <!-- Work Together Start -->
                     <div class="work-together">
                         <span>HAVE A PROJECT IN MIND?</span>
@@ -228,6 +236,18 @@
         <p>Don’t wait idly - Stack some blocks with Tetris!</p>
         <a href="tetris.html"><button>Play Now</button></a>
     </div>
+
+    <!-- File Input Name Functionality -->
+    <script>
+        const fileInput = document.getElementById("resumeUpload");
+        const label = document.querySelector(".custom-file-label");
+
+        fileInput.addEventListener("change", () => {
+            label.textContent = fileInput.files.length > 0
+                ? fileInput.files[0].name
+                : "Upload Resume*";
+        });
+    </script>
 
     <!-- -------------------------------------------------------------------------------------------------------------------------------- -->
 

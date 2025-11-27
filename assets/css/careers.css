@@ -1,0 +1,128 @@
+#careers-stack-section-1{
+    background-color: #111;
+    min-height: 100vh;
+}
+#careers-stack-section-2{
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+    background-color: #222;
+    box-shadow: 0px -7px 10px 0px #fcba1340;
+}
+
+.careers{
+    padding: 5rem 5% 12rem 5%;
+}
+.careers h1{
+    color: #fff;
+    font-size: calc(5.5rem + 0.5vw);
+    font-weight: 700;
+    /* transform: translateY(70px); */
+    /* opacity: 0; */
+}
+.careers h1 span{
+    color: #fcb913;
+}
+.careers p{
+    color: #fff;
+    font-size: calc(2rem + 0.5vw);
+    font-weight: 550;
+    margin-top: 1rem;
+    width: max-content;
+    transition: color 0.3s ease;
+    /* transform: translateY(50px); */
+    /* opacity: 0; */
+}
+.careers p:hover{
+    color: #fcb913;
+}
+
+.careers .careers-form{
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center;
+}
+.careers form{
+    width: 75%;
+    /* background-color: #0e0e0e;
+    padding: 4rem;
+    border-radius: 30px; */
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.careers form .input-box{
+    width: 48%;
+}
+.careers form .resume-box,
+.careers form .remarks-box{
+    width: 100%;
+}
+.careers form input,
+.careers form textarea{
+    width: 100%;
+    padding: 1.4rem 1rem;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #282828;
+    margin-bottom: 0.5rem;
+    color: #fff;
+    font-size: calc(1rem + 0.5vw);
+}
+.careers form input:focus,
+.careers form textarea:focus{
+    border-bottom: 2px solid #3b3b3b;
+}
+.careers form input::placeholder,
+.careers form textarea::placeholder{
+    color: #fff;
+}
+.careers form input[type="number"]::-webkit-inner-spin-button{
+    display: none;
+}
+.careers form textarea{
+    max-height: 12rem;
+    min-height: 8rem;
+    padding: 1rem 1rem 0 1rem;
+    margin-bottom: 1rem;
+}
+.careers form button{
+    background-color: #fff;
+    border: none;
+    color: #000;
+    font-size: calc(0.85rem + 0.5vw);
+    font-weight: 500;
+    padding: 1.2rem 5rem;
+    border-top-right-radius: 35px;
+    border-bottom-left-radius: 35px;
+    transition: all 0.2s ease;
+}
+.careers form button:hover{
+    background-color: #fcb913;
+    color: #fff;
+}
+
+.resume-box{
+    position: relative;
+}
+.resume-box input[type="file"] {
+    position: absolute;
+    bottom: 0;
+    left: 12rem;
+    opacity: 0;
+    pointer-events: none;
+    height: 0;
+    width: 0;
+}
+.custom-file-label{
+    width: 100%;
+    display: block;
+    padding: 1.4rem 1rem;
+    background-color: transparent;
+    border-bottom: 2px solid #282828;
+    margin-bottom: 0.5rem;
+    color: #fff;
+    font-size: calc(1rem + 0.5vw);
+    cursor: pointer;
+}
+    
