@@ -1,0 +1,93 @@
+body {
+  font-family: "Anek Bangla", sans-serif;
+}
+
+.dashboard-container{
+    background-color: #222;
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-between;
+}
+.dashboard-container aside{
+    background-color: #111;
+    width: 22%;
+    padding: 2rem 1.5rem;
+    overflow: hidden;
+}
+.dashboard-container aside img{
+    width: 140%;
+}
+.dashboard-container aside .nav{
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.dashboard-container aside .nav button{
+    background-color: #333;
+    padding: 1rem 1rem;
+    text-align: left;
+    font-size: calc(1rem + 0.5vw);
+    color: #fff;
+}
+.dashboard-container aside .nav button.active{
+    background-color: #fcb913;
+}
+.dashboard-container aside .nav button i{
+    margin-right: 7px;
+}
+.dashboard-container aside .nav button:nth-child(2) i{
+    font-size: calc(0.9rem + 0.5vw);
+}
+
+.dashboard-container main{
+    width: 78%;
+    background-color: #222;
+    padding: 1.5rem 1.5rem 1rem 1.5rem;
+}
+.dashboard-container main h1{
+    color: #fff;
+    font-size: calc(2.5rem + 0.5vw);
+    font-weight: 700;
+    text-align: center;
+}
+.dashboard-container h1 span{
+    color: #fcb913;
+}
+.dashboard-content{
+    border-radius: 10px;
+    margin-top: 1.5rem;
+    height: 83vh;
+    overflow-y: scroll;
+}
+.dashboard-content::-webkit-scrollbar {
+    display: none;
+}
+/* .dashboard-content::-webkit-scrollbar-track {
+    background: #ffffff;
+    border-radius: 10px;}
+.dashboard-content::-webkit-scrollbar-thumb {
+    background-color: #fcb913;
+    border-radius: 10px;
+} */
+/* Firefox */
+/* .dashboard-content{
+    scrollbar-width: thin;
+    scrollbar-color: #fcb913 #ffffff 
+} */
+
+.dashboard-content h2{
+    color: #fff;
+    font-size: calc(1.7rem + 0.5vw);
+    font-weight: 700;
+}
+.dashboard-content h2 span{
+    color: #fcb913;
+}
+.dashboard-content .data-row{
+    padding: 5rem;
+    border-radius: 10px;
+    background-color: #111;
+    margin-top: 1.5rem;
+}
+
