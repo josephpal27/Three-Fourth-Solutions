@@ -9,6 +9,7 @@
     box-shadow: 0px -7px 10px 0px #fcba1340;
 }
 
+/* Careers Form Start */
 .careers{
     padding: 5rem 5% 12rem 5%;
 }
@@ -83,7 +84,7 @@
 .careers form textarea{
     max-height: 12rem;
     min-height: 8rem;
-    padding: 1rem 1rem 0 1rem;
+    padding: 1.5rem 1rem 0 1rem;
     margin-bottom: 1rem;
 }
 .careers form button{
@@ -125,4 +126,93 @@
     font-size: calc(1rem + 0.5vw);
     cursor: pointer;
 }
+
+/* Media Queries */
+@media screen and (min-width: 1230px) and (max-width: 1399px){
+    .careers{
+        padding: 4.5rem 5% 11rem 5%;
+    }
+    .careers h1{
+        font-size: calc(5rem + 0.5vw);
+    }
+    .careers p{
+        font-size: calc(1.85rem + 0.5vw);
+        margin-top: 0.8rem;
+    }
+    .careers .careers-form{
+        margin-top: 3.5rem;
+    }
+    .careers form{
+        padding: 1.5rem 3.5rem 3.5rem 3.5rem;
+    }
+    .careers form input,
+    .careers form textarea{
+        padding: 1.4rem 1rem;
+        font-size: calc(0.95rem + 0.5vw);
+    }
+    .careers form textarea{
+        min-height: 7.5rem;
+        padding: 1.4rem 1rem 0 1rem;
+    }
+    .careers form button{
+        font-size: calc(0.8rem + 0.5vw);
+        border-top-right-radius: 33px;
+        border-bottom-left-radius: 33px;
+    }
+    .resume-box input[type="file"] {
+        left: 10rem;
+    }
+    .custom-file-label{
+        padding: 1.4rem 1rem;
+        font-size: calc(0.95rem + 0.5vw);
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1229px){
+    .careers{
+        padding: 4rem 5% 10rem 5%;
+    }
+    .careers h1{
+        font-size: calc(4.5rem + 0.5vw);
+    }
+    .careers p{
+        font-size: calc(1.65rem + 0.5vw);
+        margin-top: 0.8rem;
+    }
+    .careers .careers-form{
+        margin-top: 3.2rem;
+    }
+    .careers form{
+        padding: 1.2rem 3rem 3rem 3rem;
+    }
+    .careers form input,
+    .careers form textarea{
+        padding: 1.2rem 1rem;
+        border-bottom: 1.7px solid #9d9d9d;
+        font-size: calc(0.9rem + 0.5vw);
+    }
+    .careers form input:focus,
+    .careers form textarea:focus{
+        border-bottom: 1.7px solid #fff;
+    }
+    .careers form textarea{
+        min-height: 7rem;
+        padding: 1.2rem 1rem 0 1rem;
+    }
+    .careers form button{
+        font-size: calc(0.75rem + 0.5vw);
+        padding: 1rem 4.5rem;
+        border-top-right-radius: 30px;
+        border-bottom-left-radius: 30px;
+    }
+    .resume-box input[type="file"] {
+        left: 9rem;
+    }
+    .custom-file-label{
+        padding: 1.3rem 1rem;
+        border-bottom: 1.7px solid #9d9d9d;
+        font-size: calc(0.9rem + 0.5vw);
+    }
+}
     
+/* Careers Form End */
