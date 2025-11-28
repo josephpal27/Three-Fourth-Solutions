@@ -1,0 +1,74 @@
+body {
+  font-family: "Anek Bangla", sans-serif;
+}
+.admin{
+    width: 100%;
+    height: 100vh;
+    background-color: #222;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.admin h1{
+    color: #fff;
+    font-size: calc(2.5rem + 0.5vw);
+    font-weight: 700;
+    margin-top: -3rem;
+}
+.admin h1 span{
+    color: #fcb913;
+}
+.admin form{
+    background-color: #111;
+    width: 40%;
+    padding: 2.5rem;
+    border-radius: 20px;
+    margin-top: 1.5rem;
+    box-shadow: rgba(173, 173, 173, 0.2) 0px 2px 8px 0px;
+}
+.admin form .inputBox{
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+.admin form input{
+    padding: 1rem 2.2rem;
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: calc(1rem + 0.5vw);
+    border-bottom: 2px solid #222;
+    transition: all 0.1s ease;
+}
+.admin form input:focus{
+    border-bottom: 2px solid #444;
+}
+.admin form input::placeholder{
+    color: #fff;
+}
+.admin form i{
+    color: #fcb913;
+    position: absolute;
+    left: 0;
+    top: 30%;
+    font-size: calc(0.9rem + 0.5vw);
+}
+.admin form button{
+    width: 30%;
+    margin: 2rem auto 0 auto;
+    display: block;
+    font-size: calc(0.9rem + 0.5vw);
+    font-weight: 500;
+    border: none;
+    background-color: #fff;
+    padding: 0.7rem 1rem;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    transition: all 0.15s ease;
+}
+.admin form button:hover{
+    background-color: #fcb913;
+    color: #fff;
+}
