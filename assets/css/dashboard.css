@@ -12,13 +12,15 @@ body {
     background-color: #111;
     width: 22%;
     padding: 2rem 1.5rem;
+    display: flex;
+    flex-direction: column;
     overflow: hidden;
 }
 .dashboard-container aside img{
     width: 140%;
 }
 .dashboard-container aside .nav{
-    margin-top: 3rem;
+    margin-top: 2.5rem;
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -40,6 +42,31 @@ body {
 .dashboard-container aside .nav button:nth-child(2) i{
     font-size: calc(0.85rem + 0.5vw);
 }
+.dashboard-container aside .logout{
+    margin-top: auto;
+}
+.dashboard-container aside .logout a{
+    font-size: calc(0.8rem + 0.5vw);
+    color: #fff;
+    display: flex;
+    gap: 0.5rem;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    border-radius: 5px;
+    background-color: #333;
+    text-align: center;
+    display: block;
+    line-height: 49px;
+    transition: all 0.1s ease;
+}
+.dashboard-container aside .logout a i{
+    font-size: calc(0.8rem + 0.5vw);
+    margin-left: -1px;
+}
+.dashboard-container aside .logout a:hover{
+    background-color: rgb(255, 58, 58);
+}
 
 .dashboard-container main{
     width: 78%;
@@ -57,11 +84,17 @@ body {
 }
 .dashboard-content{
     border-radius: 10px;
-    margin-top: 1.5rem;
-    height: 83vh;
+    margin-top: 1rem;
+    height: 84vh;
+    overflow: hidden;
+}
+.dashboard-content .tab-content-inner{
+    border-radius: 10px;
+    height: 79vh;
+    padding-bottom: 1rem;
     overflow-y: scroll;
 }
-.dashboard-content::-webkit-scrollbar {
+.dashboard-content .tab-content-inner::-webkit-scrollbar {
     display: none;
 }
 /* .dashboard-content::-webkit-scrollbar-track {
@@ -77,6 +110,9 @@ body {
     scrollbar-color: #fcb913 #ffffff 
 } */
 
+.dashboard-content .tool-bar{
+    margin-bottom: 0.8rem;
+}
 .dashboard-content h2{
     color: #fff;
     font-size: calc(1.7rem + 0.5vw);
@@ -87,10 +123,13 @@ body {
 }
 .dashboard-content .data-row{
     padding: 1.2rem;
-    border-radius: 10px;
+    border-radius: 12px;
     background-color: #111;
-    margin-top: 1.5rem;
+    margin-top: 1.3rem;
     color: #fff;
+}
+.dashboard-content .data-row:first-child{
+    margin-top: 0;
 }
 .dashboard-content .data-row p{
     margin: 0;
