@@ -49,7 +49,6 @@ body {
     font-size: calc(0.8rem + 0.5vw);
     color: #fff;
     display: flex;
-    gap: 0.5rem;
     text-decoration: none;
     width: 45px;
     height: 45px;
@@ -152,3 +151,114 @@ body {
     text-decoration: underline;
 }
 
+/* Media Queries */
+@media screen and (min-width: 1230px) and (max-width: 1399px){
+    .dashboard-container aside{
+        padding: 1.8rem 1.3rem;
+    }
+    .dashboard-container aside .nav{
+        margin-top: 2.4rem;
+    }
+    .dashboard-container aside .nav button{
+        padding: 0.9rem 0.9rem;
+        font-size: calc(0.9rem + 0.5vw);
+    }
+    .dashboard-container aside .nav button i{
+        margin-right: 6px;
+    }
+    .dashboard-container aside .nav button:nth-child(2) i{
+        font-size: calc(0.8rem + 0.5vw);
+    }
+    .dashboard-container aside .logout a{
+        font-size: calc(0.7rem + 0.5vw);
+        width: 42px;
+        height: 41.5px;
+        line-height: 46px;
+    }
+    .dashboard-container aside .logout a i{
+        font-size: calc(0.75rem + 0.5vw);
+        margin-left: -0.7px;
+    }
+    .dashboard-container main{
+        padding: 1.3rem 1.3rem 0.8rem 1.3rem;
+    }
+    .dashboard-container main h1{
+        font-size: calc(2.3rem + 0.5vw);
+    }
+    .dashboard-content{
+        margin-top: 0.9rem;
+    }
+    .dashboard-content .tool-bar{
+        margin-bottom: 0.9rem;
+    }
+    .dashboard-content h2{
+        font-size: calc(1.5rem + 0.5vw);
+    }
+    .dashboard-content .data-row{
+        padding: 1.1rem;
+        margin-top: 1.2rem;
+    }
+    .dashboard-content .data-row p{
+        margin-bottom: 0.45rem;
+        font-size: calc(0.65rem + 0.5vw);
+    }
+    .dashboard-content .data-row p span{
+        margin-right: 6px;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1229px){
+    .dashboard-container aside{
+        padding: 1.6rem 1.15rem;
+    }
+    .dashboard-container aside .nav{
+        margin-top: 2.2rem;
+        gap: 0.9rem;
+    }
+    .dashboard-container aside .nav button{
+        padding: 0.75rem 0.8rem;
+        font-size: calc(0.8rem + 0.5vw);
+    }
+    .dashboard-container aside .nav button i{
+        margin-right: 6px;
+    }
+    .dashboard-container aside .nav button:nth-child(2) i{
+        font-size: calc(0.75rem + 0.5vw);
+    }
+    .dashboard-container aside .logout a{
+        font-size: calc(0.5rem + 0.5vw);
+        width: 38px;
+        height: 37.5px;
+        line-height: 43.5px;
+    }
+    .dashboard-container aside .logout a i{
+        font-size: calc(0.7rem + 0.5vw);
+        margin-left: -0.55px;
+    }
+    .dashboard-container main{
+        padding: 1.1rem 1.1rem 0.6rem 1.1rem;
+    }
+    .dashboard-container main h1{
+        font-size: calc(2.1rem + 0.5vw);
+    }
+    .dashboard-content{
+        margin-top: 0.8rem;
+    }
+    .dashboard-content .tool-bar{
+        margin-bottom: 0.8rem;
+    }
+    .dashboard-content h2{
+        font-size: calc(1.3rem + 0.5vw);
+    }
+    .dashboard-content .data-row{
+        padding: 1rem;
+        margin-top: 1.1rem;
+    }
+    .dashboard-content .data-row p{
+        margin-bottom: 0.4rem;
+        font-size: calc(0.6rem + 0.5vw);
+    }
+    .dashboard-content .data-row p span{
+        margin-right: 5.5px;
+    }
+}
