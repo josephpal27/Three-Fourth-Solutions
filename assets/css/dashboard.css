@@ -28,6 +28,7 @@ body {
     padding: 1rem 1rem;
     text-align: left;
     font-size: calc(1rem + 0.5vw);
+    font-weight: 500;
     color: #fff;
 }
 .dashboard-container aside .nav button.active{
@@ -37,7 +38,7 @@ body {
     margin-right: 7px;
 }
 .dashboard-container aside .nav button:nth-child(2) i{
-    font-size: calc(0.9rem + 0.5vw);
+    font-size: calc(0.85rem + 0.5vw);
 }
 
 .dashboard-container main{
@@ -85,9 +86,30 @@ body {
     color: #fcb913;
 }
 .dashboard-content .data-row{
-    padding: 5rem;
+    padding: 1.2rem;
     border-radius: 10px;
     background-color: #111;
     margin-top: 1.5rem;
+    color: #fff;
+}
+.dashboard-content .data-row p{
+    margin: 0;
+    margin-bottom: 0.5rem;
+    font-size: calc(0.7rem + 0.5vw);
+    font-weight: 500;
+}
+.dashboard-content .data-row p:last-child{
+    margin-bottom: 0;
+}
+.dashboard-content .data-row p span{
+    color: #fcb913;
+    margin-right: 7px;
+}
+.dashboard-content .data-row p a{
+    color: #fff;
+    text-decoration: none;
+}
+.dashboard-content .data-row p a:hover{
+    text-decoration: underline;
 }
 
