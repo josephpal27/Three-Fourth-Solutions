@@ -1,6 +1,9 @@
 #contact-stack-section-1{
     background-color: #111;
 }
+#contact-stack-section-2{
+    min-height: max-content;
+}
 
 /* Contact Us Start */
 .contact-us{
