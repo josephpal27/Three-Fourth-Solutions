@@ -44,8 +44,6 @@ The goal was to create a clean, professional, and accessible web experience alig
 * CSS3
 * JavaScript
 
-For collaboration, feedback, or queries regarding this project, feel free to connect.
-
 ---
 
 ⭐ If you find this project helpful or interesting, consider giving it a star!
