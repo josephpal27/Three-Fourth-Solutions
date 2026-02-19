@@ -43,6 +43,7 @@ The goal was to create a clean, professional, and accessible web experience alig
 * HTML5
 * CSS3
 * JavaScript
+* GSAP
 
 ---
 
