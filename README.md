@@ -1,4 +1,4 @@
-## Three Fourth Solutions — Company Website
+# Three Fourth Solutions — Company Website
 
 Official company website for Three Fourth Solutions, designed and developed as a modern, responsive, and performance-focused web platform.
 
